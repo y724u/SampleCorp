@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/*================================================================
+service
+================================================================*/
+.service {
+  &__container {
+    background-color: $key-color-black;
+    height: 400px;
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-family: $font-family-en;
+    color: $key-color-white;
+    text-align: center;
+    padding: 60px 0;
+  }
+
+  &__box {
+    background-color: $key-color-white;
+    max-width: 960px;
+    height: 331px;
+    margin: 0 auto;
+  }
+
+  &__list {
+    display: flex;
+    padding: 60px 45px;
+  }
+
+  &__item {
+    &+& {
+      margin-left: 90px;
+    }
+  }
+
+  &__img {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 4px;
+    line-height: 28px;
+  }
+
+  &__text {
+    font-size: 14px;
+    margin-top: 28px;
+    line-height: 24px;
+  }
+}
