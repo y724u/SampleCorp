@@ -1,0 +1,64 @@
+/*================================================================
+header
+================================================================*/
+.header {
+  background: url(../images/PC/mv.png) center center / cover;
+  height: 648px;
+  position: relative;
+
+  &__nav {
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-family: $font-family-en;
+  }
+
+  &__list {
+    width: 650px;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  &__item {
+    line-height: 60px;
+
+    &+& {
+      margin-left: 40px;
+    }
+  }
+
+  &__box {
+    position: absolute;
+    top: 36%;
+    left: 48%;
+    margin: 0 40px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 48px;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-top: 40px;
+  }
+
+  &__contact {
+    color: $key-color-white;
+    background-color: $key-color-orange;
+    margin-top: 40px;
+    border-radius: 10px;
+    width: 282px;
+    height: 50px;
+
+    a {
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+      line-height: 50px;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+/*================================================================
+header
+================================================================*/
+.header {
+  background: url(../images/PC/mv.png) center center/cover;
+  height: 648px;
+  position: relative;
+}
+
+.header__nav {
+  width: 650px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__item {
+  line-height: 60px;
+}
+
+.header__item + .header__item {
+  margin-left: 40px;
+}
+
+.header__box {
+  position: absolute;
+  top: 36%;
+  left: 48%;
+  margin: 0 40px;
+}
+
+.header__title {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 48px;
+}
+
+.header__text {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 28px;
+  margin-top: 40px;
+}
+
+.header__contact {
+  margin-top: 40px;
+}
+/*# sourceMappingURL=header.css.map */

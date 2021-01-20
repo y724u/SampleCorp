@@ -2,7 +2,36 @@
 /*================================================================
 common
 ================================================================*/
-body {
-    font-family: $font-family;
-    letter-spacing: $letter-spacing;
+@include mq(sm) {
+  .is-pc {
+    display: none;
   }
+}
+
+@include mq(md) {
+  .is-sp {
+    display: none;
+  }
+}
+
+body {
+  background-color: $key-color-ash;
+  font-size: 16px;
+  color: $font-black;
+  font-family: $font-family-ja;
+}
+
+img {
+  width: 100%;
+}
+
+%inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: content-box;
+
+  @include mq(sm) {
+    padding: 0 15px;
+  }
+}
