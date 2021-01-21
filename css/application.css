@@ -631,7 +631,7 @@ news
 .news__link::after {
   content: '';
   display: inline-block;
-  width: 100%;
+  width: 22px;
   height: 22px;
   background: url(../images/PC/news-arrow-1.svg) no-repeat;
   top: 50%;
@@ -730,5 +730,61 @@ service
   font-size: 14px;
   margin-top: 28px;
   line-height: 24px;
+}
+
+/*================================================================
+results
+================================================================*/
+.results {
+  margin-top: 215px;
+}
+
+.results__container {
+  background-color: #3E3E3E;
+  margin-left: 40px;
+  height: 754px;
+}
+
+.results__title {
+  font-size: 36px;
+  color: #FFFFFF;
+  font-family: "Montserrat", "Manrope", "sans-serif";
+  padding: 60px 0 0 60px;
+}
+
+.results__slider {
+  padding: 60px 0 0 60px;
+}
+
+.swiper-container {
+  height: 436px;
+  width: 100%;
+}
+
+.swiper-wrapper {
+  height: 366px;
+}
+
+.swiper-slide {
+  height: 366px;
+  overflow: hidden;
+}
+
+.swiper-box {
+  background-color: #FFFFFF;
+  width: 400px;
+}
+
+.swiper-box h3 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
+.swiper-box p {
+  padding: 16px 0;
+  line-height: 24px;
+  padding-left: 16px;
 }
 /*# sourceMappingURL=application.css.map */
