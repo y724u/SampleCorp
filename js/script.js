@@ -4,8 +4,25 @@ $(function () {
 });
 
 var mySwiper = new Swiper('.swiper-container', {
-  // 1度に表示するスライドの数
-  slidesPerView:1,
+
+  // レスポンシブブレーポイント（画面幅による設定）
+  breakpoints: {
+    // 画面幅が 767px 以上の場合（window width >= 767px）
+    767: {
+      slidesPerView: 1.5,
+      spaceBetween: 20
+    },
+    // 画面幅が 768px 以上の場合（window width >= 768px）
+    865: {
+      slidesPerView: 2,
+      // spaceBetween: 40
+    },
+// 画面幅が 768px 以上の場合（window width >= 768px）
+    1100: {
+      slidesPerView: 2.5,
+      spaceBetween: 40
+    }
+  },
   // スライドの方向
   direction: 'horizontal',
   // スライドの間の余白
