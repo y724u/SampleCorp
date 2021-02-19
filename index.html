@@ -6,23 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="サイトの概要文">
   <link rel="shortcut icon" href="/favicon.ico">
-  <!-- font awesome -->
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <!-- drawer.css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css"
-    media="screen and (max-width:767px)">
-  <!-- jquery & iScroll -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
-  <!-- drawer.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
-  <!-- WOW.js -->
-  <script src="/js/wow.min.js"></script>
-  <link rel="stylesheet" href="/css/animate.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <!-- original -->
   <link rel="stylesheet" href="/css/application.css">
-  <script src="./js/script.js"></script>
   <title>Sample Corp.-詩が生れて、画が出来る。 とかくに人の世は住みにくい。</title>
+  <!-- font awesome -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 
 <body>
@@ -41,20 +32,20 @@ header
         <li class="header__item"><a href="#" class="header__link">Contact</a></li>
       </ul>
     </nav>
-      <div class="header__box">
-        <h1 class="header__title">詩が生れて、画が出来る。<br> とかくに人の世は住みにくい。
+    <div class="header__box">
+      <h1 class="header__title">詩が生れて、画が出来る。<br> とかくに人の世は住みにくい。
         <p class="header__text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
-        </h1>
-        <div class="header__contact">
-          <a href="#">お問い合わせしてみる</a>
-        </div>
+      </h1>
+      <div class="header__contact">
+        <a href="#">お問い合わせしてみる</a>
       </div>
+    </div>
   </header>
-<!--*================================================================
+  <!--*================================================================
 main
 ================================================================*/-->
   <main class="main">
-<!--*================================================================
+    <!--*================================================================
 News
 ================================================================*/-->
     <section class="news">
@@ -91,38 +82,114 @@ News
         </div>
       </div>
     </section>
-<!--*================================================================
+    <!--*================================================================
 Service
 ================================================================*/-->
-<section class="service">
-  <div class="service__container">
-    <h2 class="service__title">Service</h2>
-    <div class="service__box">
-      <ul class="service__list">
-        <li class="service__item">
-          <div class="service__img"><img src="./images/PC/service1.svg" alt="WEB DESIGN"></div>
-          <h3 class="service__name">WEB<br>DESIGN</h3>
-          <p class="service__text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
-        </li>
-        <li class="service__item">
-          <div class="service__img"><img src="./images/PC/service2.svg" alt="WEB CODING"></div>
-          <h3 class="service__name">WEB<br>CODING</h3>
-          <p class="service__text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
-        </li>
-        <li class="service__item">
-          <div class="service__img"><img src="./images/PC/service3.svg" alt="CMS CUSTOMIZE"></div>
-          <h3 class="service__name">CMS<br>CUSTOMIZE</h3>
-          <p class="service__text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
+    <section class="service">
+      <div class="service__container">
+        <h2 class="service__title">Service</h2>
+        <div class="service__box">
+          <ul class="service__list">
+            <li class="service__item">
+              <div class="service__img"><img src="./images/PC/service1.svg" alt="WEB DESIGN"></div>
+              <h3 class="service__name">WEB<br>DESIGN</h3>
+              <p class="service__text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+            </li>
+            <li class="service__item">
+              <div class="service__img"><img src="./images/PC/service2.svg" alt="WEB CODING"></div>
+              <h3 class="service__name">WEB<br>CODING</h3>
+              <p class="service__text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+            </li>
+            <li class="service__item">
+              <div class="service__img"><img src="./images/PC/service3.svg" alt="CMS CUSTOMIZE"></div>
+              <h3 class="service__name">CMS<br>CUSTOMIZE</h3>
+              <p class="service__text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--*================================================================
+results
+================================================================*/-->
+    <section class="results">
+      <div class="results__container">
+        <h2 class="results__title">Results</h2>
+        <div class="results__slider">
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="swiper-box">
+                  <img src=".//images/PC/slide1.png" alt="Results画像">
+                  <h3 class="swiper-title">とかくに人の世は住みにくい。</h3>
+                  <p class="swiper-text">どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
+                </div>
+              </div>
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="swiper-box">
+                  <img src=".//images/PC/slide1.png" alt="Results画像">
+                  <h3 class="swiper-title">とかくに人の世は住みにくい。</h3>
+                  <p class="swiper-text">どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
+                </div>
+              </div>
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="swiper-box">
+                  <img src=".//images/PC/slide1.png" alt="Results画像">
+                  <h3 class="swiper-title">とかくに人の世は住みにくい。</h3>
+                  <p class="swiper-text">どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
+                </div>
+              </div>
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="swiper-box">
+                  <img src=".//images/PC/slide1.png" alt="Results画像">
+                  <h3 class="swiper-title">とかくに人の世は住みにくい。</h3>
+                  <p class="swiper-text">どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
+                </div>
+              </div>
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="swiper-box">
+                  <img src=".//images/PC/slide1.png" alt="Results画像">
+                  <h3 class="swiper-title">とかくに人の世は住みにくい。</h3>
+                  <p class="swiper-text">どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
+                </div>
+              </div>
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="swiper-box">
+                  <img src=".//images/PC/slide1.png" alt="Results画像">
+                  <h3 class="swiper-title">とかくに人の世は住みにくい。</h3>
+                  <p class="swiper-text">どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="results__button">
+            <a href="#">VIEW ALL</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-<!--*================================================================
+  <!--*================================================================
 footer
 ================================================================*/-->
-<footer class="footer"></footer>
+  <footer class="footer"></footer>
+  <!-- swiper -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- jquery & iScroll -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
