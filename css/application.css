@@ -847,4 +847,93 @@ results
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin-right: 20px;
 }
+
+/*================================================================
+price
+================================================================*/
+.price {
+  background-color: #F3F3F3;
+}
+
+.price__container {
+  padding: 120px 60px 144px 60px;
+}
+
+.price__title {
+  color: #3E3E3E;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.price__table {
+  border: 1px solid #707070;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.price__table td {
+  border: 1px solid #707070;
+  height: 61px;
+  font-size: 24px;
+  line-height: 61px;
+}
+
+.price__row {
+  background-color: #3E3E3E;
+  color: #FFFFFF;
+  text-align: center;
+  width: 30%;
+}
+
+.price__amount {
+  padding-left: 40px;
+}
+
+.price__explain {
+  margin-top: 12px;
+  font-size: 12px;
+}
+
+.price__bg {
+  background-color: #3E3E3E;
+  height: 576px;
+  position: relative;
+  width: 70%;
+}
+
+.price__review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 40px;
+  position: absolute;
+  width: 100%;
+  top: -50px;
+}
+
+.price__left {
+  background-color: #FFFFFF;
+  padding: 120px 60px 132px 60px;
+}
+
+.price__comments {
+  font-size: 36px;
+}
+
+.price__comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.price__comment img {
+  width: 100px;
+  height: 100px;
+}
+
+.price__comment p {
+  font-size: 16px;
+  line-height: 24px;
+}
 /*# sourceMappingURL=application.css.map */
