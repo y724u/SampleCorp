@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/*================================================================
+price
+================================================================*/
+.price {
+  background-color: $key-color-ash;
+
+  &__container {
+    padding: 120px 60px 144px 60px;
+  }
+
+  &__title {
+    color: $key-color-black;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+  }
+
+  &__table {
+    border: 1px solid #707070;
+    width: 100%;
+    margin-top: 60px;
+
+    td {
+      border: 1px solid #707070;
+      height: 61px;
+      font-size: 24px;
+      line-height: 61px;
+    }
+  }
+
+  &__row {
+    background-color: $key-color-black;
+    color: $key-color-white;
+    text-align: center;
+    width: 30%;
+  }
+
+  &__amount {
+    padding-left: 40px;
+  }
+
+  &__explain {
+    margin-top: 12px;
+    font-size: 12px;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__bg {
+    background-color: $key-color-black;
+    height: 576px;
+    width: 70%;
+    position: absolute;
+    top: 148px;
+  }
+
+  &__review {
+    display: flex;
+    padding: 0 40px;
+    position: absolute;
+    width: 100%;
+    z-index: 500;
+    top: 0;
+    left: 0;
+  }
+
+  &__left {
+    background-color: $key-color-white;
+    padding: 120px 60px 132px 60px;
+  }
+
+  &__comments {
+    font-size: 36px;
+  }
+
+  &__comment {
+    display: flex;
+    font-size: 16px;
+    margin-top: 60px;
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+
+    p {
+      line-height: 24px;
+      margin-left: 32px;
+    }
+  }
+
+  &__right {
+    margin-top: 80px;
+  }
+}
