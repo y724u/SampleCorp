@@ -46,11 +46,16 @@ price
     font-size: 12px;
   }
 
+  &__wrapper {
+    position: relative;
+  }
+
   &__bg {
     background-color: $key-color-black;
     height: 576px;
-    position: relative;
     width: 70%;
+    position: absolute;
+    top: 148px;
   }
 
   &__review {
@@ -58,9 +63,10 @@ price
     padding: 0 40px;
     position: absolute;
     width: 100%;
-    top: -50px;
+    z-index: 500;
+    top: 0;
+    left: 0;
   }
-
 
   &__left {
     background-color: $key-color-white;
@@ -73,6 +79,8 @@ price
 
   &__comment {
     display: flex;
+    font-size: 16px;
+    margin-top: 60px;
 
     img {
       width: 100px;
@@ -80,15 +88,12 @@ price
     }
 
     p {
-      font-size: 16px;
       line-height: 24px;
+      margin-left: 32px;
     }
   }
 
-  // &__right {
-  //   img {
-  //     width: 534px;
-  //     height: 444px;
-  //   }
-  // }
+  &__right {
+    margin-top: 80px;
+  }
 }

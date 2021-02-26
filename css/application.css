@@ -895,11 +895,16 @@ price
   font-size: 12px;
 }
 
+.price__wrapper {
+  position: relative;
+}
+
 .price__bg {
   background-color: #3E3E3E;
   height: 576px;
-  position: relative;
   width: 70%;
+  position: absolute;
+  top: 148px;
 }
 
 .price__review {
@@ -909,7 +914,9 @@ price
   padding: 0 40px;
   position: absolute;
   width: 100%;
-  top: -50px;
+  z-index: 500;
+  top: 0;
+  left: 0;
 }
 
 .price__left {
@@ -925,6 +932,8 @@ price
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 16px;
+  margin-top: 60px;
 }
 
 .price__comment img {
@@ -933,7 +942,11 @@ price
 }
 
 .price__comment p {
-  font-size: 16px;
   line-height: 24px;
+  margin-left: 32px;
+}
+
+.price__right {
+  margin-top: 80px;
 }
 /*# sourceMappingURL=application.css.map */
