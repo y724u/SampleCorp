@@ -6,6 +6,7 @@ application
 /* Reset box-model */
 /* ============================================ */
 @import url("https://fonts.google.com/specimen/Montserrat");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -912,9 +913,8 @@ price
   display: -ms-flexbox;
   display: flex;
   padding: 0 40px;
-  position: absolute;
+  position: relative;
   width: 100%;
-  z-index: 500;
   top: 0;
   left: 0;
 }
@@ -948,5 +948,75 @@ price
 
 .price__right {
   margin-top: 80px;
+}
+
+/*================================================================
+Q&A
+================================================================*/
+.question {
+  background: url(../images/PC/qa-bg.png) center center/cover;
+  top: 110px;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.question__container {
+  padding: 60px 40px 120px 0;
+}
+
+.question__title {
+  color: #3E3E3E;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.question__wrapper {
+  margin-top: 60px;
+  margin-left: auto;
+  width: 50%;
+}
+
+.question__box {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 16px 18px 18px;
+}
+
+.question__box + .question__box {
+  margin-top: 32px;
+}
+
+.question__definition {
+  color: #3E3E3E;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  background: url(../images/PC/minus.svg) no-repeat right;
+}
+
+.question__definition span {
+  background: #3B69FF;
+  border-radius: 50%;
+  color: #FFFFFF;
+  display: inline-block;
+  font-weight: bold;
+  font-family: Montserrat;
+  font-size: 16px;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  line-height: 23px;
+  margin-right: 16px;
+  padding-left: 1px;
+}
+
+.question__description {
+  background-color: #3B69FF33;
+  border-radius: 4px;
+  padding: 16px;
+  margin-top: 18px;
 }
 /*# sourceMappingURL=application.css.map */
