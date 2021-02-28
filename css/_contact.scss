@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+/*================================================================
+contact
+================================================================*/
+.contact {
+  background: url(../images/PC/contact-bg.png) center center / cover;
+  width: 100%;
+  height: auto;
+  padding: 60px 180px;
+
+  &__container {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  &__header {
+    background: url(../images/PC/contact1.png)center center / cover;
+    border-radius: 12px 12px 0 0;
+    color: $key-color-white;
+    text-align: center;
+    height: 196px;
+    padding: 60px 0;
+  }
+
+  &__title {
+    font-size: 36px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    margin-top: 16px;
+  }
+
+  &__form {
+    background-color: $key-color-white;
+    border-radius: 0 0 12px 12px;
+    padding: 60px 120px;
+  }
+
+  &__label {
+    font-weight: bold;
+  }
+
+  &__text {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 0;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1em;
+    padding: 0.4em 0.8em;
+    width: 100%;
+
+    &:focus {
+      border: 1px solid rgba(0, 0, 0, 0.32);
+      box-shadow: none;
+      outline: none;
+    }
+  }
+
+  &__radio {
+    display: none;
+
+    +span {
+      cursor: pointer;
+      display: inline-block;
+      margin: 0 0.2em 0;
+      padding: 0 0 0 1.2em;
+      position: relative;
+    }
+
+    +span::before {
+      -webkit-transform: translateY(-50%);
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.16);
+      border-radius: 50%;
+      content: "";
+      display: block;
+      height: 16px;
+      left: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px;
+    }
+
+    +span::after {
+      -webkit-transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.32);
+      border: 1px solid transparent;
+      border-radius: 50%;
+      content: "";
+      height: 8px;
+      left: 4px;
+      opacity: 0;
+      padding: 2px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 0.3s ease 0s;
+      width: 8px;
+    }
+
+    &:checked+span::after {
+      opacity: 1;
+    }
+  }
+}

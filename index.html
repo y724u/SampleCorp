@@ -283,7 +283,6 @@ access
           </div>
         </div>
       </div>
-      <div class="access__space"></div>
     </section>
     <!--*================================================================
 contact
@@ -295,12 +294,55 @@ contact
           <p class="contact__subtitle">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。
           </p>
         </div>
-        <form action="post" class="contact__form">
+        <form action="#">
+          <ul class="contact__form">
+            <li class="contact__item">
+              <label class="contact__label" for="select">お問い合わせ種別</label>
+              <select class="contact__select">
+                <option>選択してください</option>
+                <option>セレクトA</option>
+                <option>セレクトB</option>
+                <option>セレクトC</option>
+              </select>
+            </li>
+            <li class="contact__item">
+              <label class="contact__label" for="name">氏名<span>必須</span></label>
+              <input class="contact__text" type="text" name="" id="name" required>
+            </li>
+            <li class="contact__item">
+              <label class="contact__label" for="name">フリガナ<span>必須</span></label>
+              <input class="contact__text" type="text" name="" id="name" required>
+            </li>
+            <li class="contact__item">
+              <label class="contact__label" for="address">メールアドレス</label>
+              <input class="contact__text" type="email" name="" id="address">
+            </li>
+            <li class="contact__item">
+              <label class="contact__label" for="radio">性別</label>
+              <label>
+                <input class="contact__radio" type="radio" name="radio">
+                <span>男性</span>
+              </label>
+              <label>
+                <input class="contact__radio" type="radio" name="radio">
+                <span>女性</span>
+              </label>
+            </li>
+            <li class="contact__item">
+              <label class="contact__label">メッセージ</label>
+              <input class="contact__textarea" type="textarea" name="">
+            </li>
+            <li class="contact__policy">
+              <p>
+                <input class="contact__checkbox" type="checkbox" id="box">
+                <label class="contact__label" for="box">個人情報保護方針に同意する</label>
+              </p>
+            </li>
+            <input class="contact__submit" type="submit" name="" value="送信する">
+          </ul>
         </form>
       </div>
-
     </section>
-
   </main>
   <!--*================================================================
 footer
