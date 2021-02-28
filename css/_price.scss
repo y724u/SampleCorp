@@ -61,9 +61,8 @@ price
   &__review {
     display: flex;
     padding: 0 40px;
-    position: absolute;
+    position: relative;
     width: 100%;
-    z-index: 500;
     top: 0;
     left: 0;
   }
