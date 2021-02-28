@@ -4,18 +4,60 @@
 access
 ================================================================*/
 .access {
-  background: linear-gradient(90deg, #f0bc68 0%, #f0bc68 50%, #c4d7d1 50%, #c4d7d1 100%);
-  top: 110px;
+  background: linear-gradient(90deg, #3E3E3E 0%, #3E3E3E 76%, #F3F3F3 76%, #F3F3F3 100%);
+  color: $key-color-white;
+  top: 109px;
   position: relative;
   height: 504px;
   width: 100%;
-  // background: #000;
-}
 
-&__button {
-  @extend %button-box;
+  &__container {
+    padding: 120px 0 0 100px;
+    position: relative;
+  }
 
-  a {
-    @extend %button-link;
+  &__title {
+    font-size: 36px;
+  }
+
+  &__address {
+    margin-top: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__button {
+    @extend %button-box;
+    width: 314px;
+
+    a {
+      @extend %button-link;
+    }
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 120px;
+    right: 60%;
+  }
+
+  &__iframe {
+    position: relative;
+    width: 100%;
+    height: 0;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__space {
+    position: relative;
+    background-color: #F3F3F3;
+    top: 240px;
+    width: 100%;
+    height: 120px;
   }
 }
