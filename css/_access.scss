@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/*================================================================
+access
+================================================================*/
+.access {
+  background: linear-gradient(90deg, #f0bc68 0%, #f0bc68 50%, #c4d7d1 50%, #c4d7d1 100%);
+  top: 110px;
+  position: relative;
+  height: 504px;
+  width: 100%;
+  // background: #000;
+}
+
+&__button {
+  @extend %button-box;
+
+  a {
+    @extend %button-link;
+  }
+}
