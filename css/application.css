@@ -859,6 +859,8 @@ price
 
 .price__container {
   padding: 120px 60px 144px 60px;
+  max-width: 980px;
+  margin: 0 auto;
 }
 
 .price__title {
@@ -1094,11 +1096,11 @@ contact
   background: url(../images/PC/contact-bg.png) center center/cover;
   width: 100%;
   height: auto;
-  padding: 60px 180px;
+  padding: 60px 160px;
 }
 
 .contact__container {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -1143,12 +1145,15 @@ contact
 .contact__label {
   display: inline-block;
   font-weight: bold;
-  width: 128px;
+  width: 130px;
+  height: 40px;
   margin-right: 60px;
   line-height: 40px;
+  white-space: nowrap;
 }
 
-.contact__required {
+.contact__required::after {
+  content: "必須";
   background-color: #FF4646;
   border-radius: 2px;
   color: #FFFFFF;
@@ -1355,5 +1360,62 @@ contact
 .contact__submit::-moz-foucus-inner {
   border: none;
   padding: 0;
+}
+
+/*================================================================
+footer
+================================================================*/
+.footer {
+  background-color: #3E3E3E;
+  color: #FFFFFF;
+  padding: 60px 160px;
+  position: relative;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer__icon {
+  opacity: .6;
+  font-size: 2.2em;
+  margin-right: 30px;
+}
+
+.footer__text {
+  opacity: .6;
+  margin-top: 40px;
+}
+
+.footer__list + .footer__list {
+  margin-top: 24px;
+}
+
+.footer__right {
+  text-align: right;
+}
+
+.footer__detail {
+  color: #E3E3E3;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.footer__copyright {
+  opacity: .6;
+  padding-top: 10px;
+}
+
+.footer__arrow {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
 }
 /*# sourceMappingURL=application.css.map */
