@@ -7,10 +7,10 @@ contact
   background: url(../images/PC/contact-bg.png) center center / cover;
   width: 100%;
   height: auto;
-  padding: 60px 180px;
+  padding: 60px 160px;
 
   &__container {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
   }
 
@@ -40,7 +40,6 @@ contact
 
   &__item {
     display: flex;
-    // line-height: 40px;
     & + & {
       margin-top: 32px;
     }
@@ -53,17 +52,22 @@ contact
   &__label {
     display: inline-block;
     font-weight: bold;
-    width: 128px;
+    width: 130px;
+    height: 40px;
     margin-right: 60px;
     line-height: 40px;
+    white-space: nowrap
   }
 
   &__required {
-    background-color: #FF4646;
-    border-radius: 2px;
-    color: $key-color-white;
-    margin-left: 12px;
-    padding: 2px 8px;
+    &::after {
+      content: "必須";
+      background-color: #FF4646;
+      border-radius: 2px;
+      color: $key-color-white;
+      margin-left: 12px;
+      padding: 2px 8px;
+    }
   }
 
   &__select {

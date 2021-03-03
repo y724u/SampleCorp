@@ -14,7 +14,8 @@
         "_price.scss",
         "_question.scss",
         "_access.scss",
-        "_contact.scss"
+        "_contact.scss",
+        "_footer.scss"
     ],
     "names": [],
     "file": "application.css"
