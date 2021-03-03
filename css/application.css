@@ -492,13 +492,13 @@ variables
 /*================================================================
 common
 ================================================================*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .is-pc {
     display: none;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .is-sp {
     display: none;
   }
@@ -523,7 +523,7 @@ img {
           box-sizing: content-box;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .news {
     padding: 0 15px;
   }
