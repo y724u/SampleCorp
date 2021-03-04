@@ -1179,16 +1179,16 @@ price
   background-color: #F3F3F3;
 }
 
-@media screen and (max-width: 767px) {
-  .price {
-    display: none;
-  }
-}
-
 .price__container {
   padding: 120px 60px 144px 60px;
   max-width: 980px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .price__container {
+    padding: 40px 5% 80px;
+  }
 }
 
 .price__title {
@@ -1196,6 +1196,13 @@ price
   font-size: 36px;
   line-height: 44px;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .price__title {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .price__table {
@@ -1211,6 +1218,18 @@ price
   line-height: 61px;
 }
 
+@media screen and (max-width: 767px) {
+  .price__table {
+    margin-top: 40px;
+  }
+  .price__table td {
+    height: 56px;
+    font-size: 18px;
+    line-height: 56px;
+    font-weight: bold;
+  }
+}
+
 .price__row {
   background-color: #3E3E3E;
   color: #FFFFFF;
@@ -1222,9 +1241,21 @@ price
   padding-left: 40px;
 }
 
+@media screen and (max-width: 767px) {
+  .price__amount {
+    padding-left: 20px;
+  }
+}
+
 .price__explain {
   margin-top: 12px;
   font-size: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .price__explain {
+    margin-top: 8px;
+  }
 }
 
 .price__wrapper {
@@ -1233,10 +1264,17 @@ price
 
 .price__bg {
   background-color: #3E3E3E;
-  height: 576px;
+  height: 100%;
   width: 70%;
   position: absolute;
   top: 148px;
+}
+
+@media screen and (max-width: 767px) {
+  .price__bg {
+    top: 60px;
+    width: 100%;
+  }
 }
 
 .price__review {
@@ -1250,13 +1288,31 @@ price
   left: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .price__review {
+    padding: 0 5%;
+  }
+}
+
 .price__left {
   background-color: #FFFFFF;
   padding: 120px 60px 132px 60px;
 }
 
+@media screen and (max-width: 767px) {
+  .price__left {
+    padding: 40px 5%;
+  }
+}
+
 .price__comments {
   font-size: 36px;
+}
+
+@media screen and (max-width: 767px) {
+  .price__comments {
+    font-size: 30px;
+  }
 }
 
 .price__comment {
@@ -1277,8 +1333,28 @@ price
   margin-left: 32px;
 }
 
+@media screen and (max-width: 767px) {
+  .price__comment {
+    font-size: 14px;
+    margin-top: 40px;
+  }
+  .price__comment img {
+    width: 60px;
+    height: 60px;
+  }
+  .price__comment p {
+    line-height: 20px;
+  }
+}
+
 .price__right {
   margin-top: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .price__right img {
+    display: none;
+  }
 }
 
 /*================================================================

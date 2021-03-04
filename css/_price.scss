@@ -6,15 +6,14 @@ price
 .price {
   background-color: $key-color-ash;
 
-  @include mq(sm) {
-    display: none;
-    
-  }
-
   &__container {
     padding: 120px 60px 144px 60px;
     max-width: 980px;
     margin: 0 auto;
+
+    @include mq(sm) {
+      padding: 40px 5% 80px;
+    }
   }
 
   &__title {
@@ -22,6 +21,11 @@ price
     font-size: 36px;
     line-height: 44px;
     text-align: center;
+
+    @include mq(sm) {
+      font-size: 30px;
+      line-height: 37px;
+    }
   }
 
   &__table {
@@ -35,6 +39,18 @@ price
       font-size: 24px;
       line-height: 61px;
     }
+
+    @include mq(sm) {
+      margin-top: 40px;
+
+
+    td {
+      height: 56px;
+      font-size: 18px;
+      line-height: 56px;
+      font-weight: bold;
+    }
+    }
   }
 
   &__row {
@@ -46,11 +62,19 @@ price
 
   &__amount {
     padding-left: 40px;
+
+    @include mq(sm) {
+      padding-left: 20px;
+    }
   }
 
   &__explain {
     margin-top: 12px;
     font-size: 12px;
+
+    @include mq(sm) {
+      margin-top: 8px;
+    }
   }
 
   &__wrapper {
@@ -59,10 +83,15 @@ price
 
   &__bg {
     background-color: $key-color-black;
-    height: 576px;
+    height: 100%;
     width: 70%;
     position: absolute;
     top: 148px;
+
+    @include mq(sm) {
+      top: 60px;
+      width: 100%;
+    }
   }
 
   &__review {
@@ -72,15 +101,27 @@ price
     width: 100%;
     top: 0;
     left: 0;
+
+    @include mq(sm) {
+      padding: 0 5%;
+    }
   }
 
   &__left {
     background-color: $key-color-white;
     padding: 120px 60px 132px 60px;
+
+    @include mq(sm) {
+      padding: 40px 5%;
+    }
   }
 
   &__comments {
     font-size: 36px;
+
+    @include mq(sm) {
+      font-size: 30px;
+    }
   }
 
   &__comment {
@@ -97,9 +138,29 @@ price
       line-height: 24px;
       margin-left: 32px;
     }
+
+    @include mq(sm) {
+      font-size: 14px;
+      margin-top: 40px;
+
+      img {
+        width: 60px;
+        height: 60px;
+      }
+
+      p {
+        line-height: 20px;
+      }
+    }
   }
 
   &__right {
     margin-top: 80px;
+
+    @include mq(sm) {
+      img {
+        display: none;
+      }
+    }
   }
 }
