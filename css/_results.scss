@@ -7,25 +7,38 @@ results
   margin-top: 215px;
 
   @include mq(sm) {
-    display: none;
-    
+    margin-top: 410px;
   }
 
   &__container {
     background-color: $key-color-black;
     margin-left: 40px;
     height: 754px;
+
+    @include mq(sm) {
+      margin-left: 0;
+      height: auto;
+    }
   }
 
   &__title {
     font-size: 36px;
     color: $key-color-white;
     font-family: $font-family-en;
-    padding: 60px 0 0 60px;
+    padding: 40px 0;
+
+    @include mq(sm) {
+      font-size: 30px;
+      text-align: center;
+    }
   }
 
   &__slider {
     padding: 60px 0 0 60px;
+
+    @include mq(sm) {
+      padding: 0 5% 40px;
+    }
   }
 
   &__button {
@@ -34,6 +47,11 @@ results
     a {
       @extend %button-link;
     }
+
+    @include mq(sm) {
+      width: 316px;
+      margin: 24px auto;
+    }
   }
 }
 
@@ -41,11 +59,20 @@ results
 
   &-container {
     height: 436px;
+
+    @include mq(sm) {
+      height: 310px;
+    }
   }
 
   &-slide {
     width: 400px;
     height: 366px;
+
+    @include mq(sm) {
+      width: 274px;
+      height: 253px;
+    }
   }
 
   &-box {
@@ -63,6 +90,22 @@ results
       padding: 16px 0;
       line-height: 24px;
       padding-left: 16px;
+    }
+
+    @include mq(sm) {
+      width: 274px;
+
+      h3 {
+        font-size: 14px;
+        padding-top: 12px;
+        padding-left: 12px;
+      }
+
+      p {
+        font-size: 12px;
+        padding: 12px 12px;
+        line-height: 18px;
+      }
     }
   }
 
@@ -104,9 +147,17 @@ results
         }
       }
     }
+
+    @include mq(sm) {
+      text-align: center;
+    }
   }
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
   margin-right: 20px;
+
+  @include mq(sm) {
+    margin-right: 16px;
+  }
 }

@@ -814,7 +814,7 @@ news
 
 @media screen and (max-width: 767px) {
   .news__link::after {
-    left: 95%;
+    left: 92%;
   }
 }
 
@@ -1010,7 +1010,7 @@ results
 
 @media screen and (max-width: 767px) {
   .results {
-    display: none;
+    margin-top: 410px;
   }
 }
 
@@ -1020,24 +1020,64 @@ results
   height: 754px;
 }
 
+@media screen and (max-width: 767px) {
+  .results__container {
+    margin-left: 0;
+    height: auto;
+  }
+}
+
 .results__title {
   font-size: 36px;
   color: #FFFFFF;
   font-family: "Montserrat", "Manrope", "sans-serif";
-  padding: 60px 0 0 60px;
+  padding: 40px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .results__title {
+    font-size: 30px;
+    text-align: center;
+  }
 }
 
 .results__slider {
   padding: 60px 0 0 60px;
 }
 
+@media screen and (max-width: 767px) {
+  .results__slider {
+    padding: 0 5% 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .results__button {
+    width: 316px;
+    margin: 24px auto;
+  }
+}
+
 .swiper-container {
   height: 436px;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-container {
+    height: 310px;
+  }
 }
 
 .swiper-slide {
   width: 400px;
   height: 366px;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide {
+    width: 274px;
+    height: 253px;
+  }
 }
 
 .swiper-box {
@@ -1056,6 +1096,22 @@ results
   padding: 16px 0;
   line-height: 24px;
   padding-left: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-box {
+    width: 274px;
+  }
+  .swiper-box h3 {
+    font-size: 14px;
+    padding-top: 12px;
+    padding-left: 12px;
+  }
+  .swiper-box p {
+    font-size: 12px;
+    padding: 12px 12px;
+    line-height: 18px;
+  }
 }
 
 .swiper-pagination {
@@ -1100,8 +1156,20 @@ results
   left: -4px;
 }
 
+@media screen and (max-width: 767px) {
+  .swiper-pagination {
+    text-align: center;
+  }
+}
+
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-right: 16px;
+  }
 }
 
 /*================================================================
