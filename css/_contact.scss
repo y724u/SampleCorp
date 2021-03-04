@@ -9,6 +9,11 @@ contact
   height: auto;
   padding: 60px 160px;
 
+  @include mq(sm) {
+    display: none;
+    
+  }
+
   &__container {
     max-width: 960px;
     margin: 0 auto;

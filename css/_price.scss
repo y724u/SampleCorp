@@ -6,6 +6,11 @@ price
 .price {
   background-color: $key-color-ash;
 
+  @include mq(sm) {
+    display: none;
+    
+  }
+
   &__container {
     padding: 120px 60px 144px 60px;
     max-width: 980px;

@@ -9,6 +9,11 @@ service
     height: 400px;
     width: 100%;
     margin-top: 60px;
+
+    @include mq(sm) {
+      height: 480px;
+      padding: 0 5%;
+    }
   }
 
   &__title {
@@ -17,6 +22,11 @@ service
     color: $key-color-white;
     text-align: center;
     padding: 60px 0;
+
+    @include mq(sm) {
+      font-size: 30px;
+      padding: 40px 0;
+    }
   }
 
   &__box {
@@ -24,16 +34,32 @@ service
     max-width: 960px;
     height: 331px;
     margin: 0 auto;
+
+    @include mq(sm) {
+      height: auto;
+    }
   }
 
   &__list {
     display: flex;
     padding: 60px 45px;
+
+    @include mq(sm) {
+      display: block;
+      padding: 40px 5%;
+    }
   }
 
   &__item {
     &+& {
       margin-left: 90px;
+    }
+
+    @include mq(sm) {
+      &+& {
+        margin-left: 0px;
+        margin-top: 50px;
+      }
     }
   }
 
@@ -50,11 +76,19 @@ service
     text-align: center;
     letter-spacing: 4px;
     line-height: 28px;
+
+    @include mq(sm) {
+      line-height: 24px;
+    }
   }
 
   &__text {
     font-size: 14px;
     margin-top: 28px;
     line-height: 24px;
+
+    @include mq(sm) {
+      margin-top: 20px;
+    }
   }
 }

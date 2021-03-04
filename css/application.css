@@ -906,12 +906,26 @@ service
   margin-top: 60px;
 }
 
+@media screen and (max-width: 767px) {
+  .service__container {
+    height: 480px;
+    padding: 0 5%;
+  }
+}
+
 .service__title {
   font-size: 36px;
   font-family: "Montserrat", "Manrope", "sans-serif";
   color: #FFFFFF;
   text-align: center;
   padding: 60px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .service__title {
+    font-size: 30px;
+    padding: 40px 0;
+  }
 }
 
 .service__box {
@@ -921,6 +935,12 @@ service
   margin: 0 auto;
 }
 
+@media screen and (max-width: 767px) {
+  .service__box {
+    height: auto;
+  }
+}
+
 .service__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -928,8 +948,22 @@ service
   padding: 60px 45px;
 }
 
+@media screen and (max-width: 767px) {
+  .service__list {
+    display: block;
+    padding: 40px 5%;
+  }
+}
+
 .service__item + .service__item {
   margin-left: 90px;
+}
+
+@media screen and (max-width: 767px) {
+  .service__item + .service__item {
+    margin-left: 0px;
+    margin-top: 50px;
+  }
 }
 
 .service__img {
@@ -949,10 +983,22 @@ service
   line-height: 28px;
 }
 
+@media screen and (max-width: 767px) {
+  .service__name {
+    line-height: 24px;
+  }
+}
+
 .service__text {
   font-size: 14px;
   margin-top: 28px;
   line-height: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .service__text {
+    margin-top: 20px;
+  }
 }
 
 /*================================================================
@@ -960,6 +1006,12 @@ results
 ================================================================*/
 .results {
   margin-top: 215px;
+}
+
+@media screen and (max-width: 767px) {
+  .results {
+    display: none;
+  }
 }
 
 .results__container {
@@ -1057,6 +1109,12 @@ price
 ================================================================*/
 .price {
   background-color: #F3F3F3;
+}
+
+@media screen and (max-width: 767px) {
+  .price {
+    display: none;
+  }
 }
 
 .price__container {
@@ -1166,6 +1224,12 @@ Q&A
   height: auto;
 }
 
+@media screen and (max-width: 767px) {
+  .question {
+    display: none;
+  }
+}
+
 .question__container {
   padding: 60px 40px 120px 0;
 }
@@ -1239,6 +1303,12 @@ access
   margin-bottom: 300px;
 }
 
+@media screen and (max-width: 767px) {
+  .access {
+    display: none;
+  }
+}
+
 .access__container {
   padding: 120px 40px 0 100px;
 }
@@ -1299,6 +1369,12 @@ contact
   width: 100%;
   height: auto;
   padding: 60px 160px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact {
+    display: none;
+  }
 }
 
 .contact__container {
@@ -1572,6 +1648,12 @@ footer
   color: #FFFFFF;
   padding: 60px 160px;
   position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    display: none;
+  }
 }
 
 .footer__container {

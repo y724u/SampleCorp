@@ -10,6 +10,11 @@ Q&A
   width: 100%;
   height: auto;
 
+  @include mq(sm) {
+    display: none;
+    
+  }
+
   &__container {
     padding: 60px 40px 120px 0;
   }

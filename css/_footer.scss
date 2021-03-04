@@ -9,6 +9,11 @@ footer
   padding: 60px 160px;
   position: relative;
 
+  @include mq(sm) {
+    display: none;
+    
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;

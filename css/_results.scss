@@ -6,6 +6,11 @@ results
 .results {
   margin-top: 215px;
 
+  @include mq(sm) {
+    display: none;
+    
+  }
+
   &__container {
     background-color: $key-color-black;
     margin-left: 40px;
