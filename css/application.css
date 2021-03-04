@@ -684,6 +684,7 @@ header
   .header__box {
     position: static;
     padding: 161px 0 230px;
+    margin: 0 5%;
   }
 }
 
@@ -696,6 +697,7 @@ header
 @media screen and (max-width: 767px) {
   .header__title {
     font-size: 24px;
+    line-height: 40px;
   }
 }
 
@@ -709,6 +711,7 @@ header
 @media screen and (max-width: 767px) {
   .header__text {
     font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -1053,7 +1056,7 @@ results
 
 @media screen and (max-width: 767px) {
   .results__button {
-    width: 316px;
+    width: 100%;
     margin: 24px auto;
   }
 }
@@ -1968,7 +1971,7 @@ footer
 
 @media screen and (max-width: 767px) {
   .footer {
-    display: none;
+    padding: 60px 0 57px 0;
   }
 }
 
@@ -1983,10 +1986,24 @@ footer
   margin: 0 auto;
 }
 
+@media screen and (max-width: 767px) {
+  .footer__container {
+    display: block;
+    width: 250px;
+    text-align: center;
+  }
+}
+
 .footer__icon {
   opacity: .6;
   font-size: 2.2em;
   margin-right: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__icon {
+    margin: 0 25px;
+  }
 }
 
 .footer__text {
@@ -2002,10 +2019,24 @@ footer
   text-align: right;
 }
 
+@media screen and (max-width: 767px) {
+  .footer__right {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
 .footer__detail {
   color: #E3E3E3;
   font-size: 40px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__detail {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
 }
 
 .footer__copyright {
@@ -2015,7 +2046,7 @@ footer
 
 .footer__arrow {
   position: absolute;
-  bottom: 30px;
-  right: 30px;
+  bottom: 13px;
+  right: 13px;
 }
 /*# sourceMappingURL=application.css.map */
