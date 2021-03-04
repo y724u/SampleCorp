@@ -25,11 +25,12 @@ results
     font-size: 36px;
     color: $key-color-white;
     font-family: $font-family-en;
-    padding: 40px 0;
+    padding: 40px 0 40px 60px;
 
     @include mq(sm) {
       font-size: 30px;
       text-align: center;
+      padding: 40px 0;
     }
   }
 

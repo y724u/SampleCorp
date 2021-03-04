@@ -1034,13 +1034,14 @@ results
   font-size: 36px;
   color: #FFFFFF;
   font-family: "Montserrat", "Manrope", "sans-serif";
-  padding: 40px 0;
+  padding: 40px 0 40px 60px;
 }
 
 @media screen and (max-width: 767px) {
   .results__title {
     font-size: 30px;
     text-align: center;
+    padding: 40px 0;
   }
 }
 
