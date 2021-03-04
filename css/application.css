@@ -1485,12 +1485,21 @@ access
 
 @media screen and (max-width: 767px) {
   .access {
-    display: none;
+    background: #3E3E3E;
+    top: 60px;
+    height: auto;
+    margin-bottom: 0;
   }
 }
 
 .access__container {
   padding: 120px 40px 0 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .access__container {
+    padding: 40px 5% 60px;
+  }
 }
 
 .access__flexbox {
@@ -1499,18 +1508,45 @@ access
   display: flex;
 }
 
+@media screen and (max-width: 767px) {
+  .access__flexbox {
+    display: block;
+    position: relative;
+  }
+}
+
 .access__box {
   margin-right: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .access__box {
+    margin-right: 0;
+  }
 }
 
 .access__title {
   font-size: 36px;
 }
 
+@media screen and (max-width: 767px) {
+  .access__title {
+    font-size: 30px;
+  }
+}
+
 .access__address {
   margin-top: 60px;
   font-size: 16px;
   line-height: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .access__address {
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .access__iframe {
@@ -1529,8 +1565,22 @@ access
   height: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .access__iframe {
+    position: absolute;
+    top: 150px;
+  }
+}
+
 .access__button {
   width: 314px;
+}
+
+@media screen and (max-width: 767px) {
+  .access__button {
+    margin-top: 50%;
+    width: 100%;
+  }
 }
 
 .access__space {
