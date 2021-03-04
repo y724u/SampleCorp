@@ -10,8 +10,8 @@ contact
   padding: 60px 160px;
 
   @include mq(sm) {
-    display: none;
-    
+    padding: 40px 5%;
+    margin-top: 60px;
   }
 
   &__container {
@@ -26,27 +26,51 @@ contact
     text-align: center;
     height: 196px;
     padding: 60px 0;
+
+    @include mq(sm) {
+      padding: 40px 5%;
+      height: auto;
+    }
   }
 
   &__title {
     font-size: 36px;
+
+    @include mq(sm) {
+     font-size: 30px;
+    }
   }
 
   &__subtitle {
     font-size: 16px;
     margin-top: 16px;
+
+    @include mq(sm) {
+      font-size: 14px;
+      margin-top: 12px;
+    }
   }
 
   &__form {
     background-color: $key-color-white;
     border-radius: 0 0 12px 12px;
     padding: 60px 120px;
+
+    @include mq(sm) {
+      padding: 40px 5%;
+      height: auto;
+    }
   }
 
   &__item {
     display: flex;
     & + & {
       margin-top: 32px;
+    }
+
+    @include mq(sm) {
+      display: block;
+      width: 100%;
     }
   }
 
@@ -61,7 +85,16 @@ contact
     height: 40px;
     margin-right: 60px;
     line-height: 40px;
-    white-space: nowrap
+    white-space: nowrap;
+
+    @include mq(sm) {
+      width: 100%;
+      font-size: 16px;
+      height: 24px;
+      line-height: 24px;
+      margin-bottom: 16px;
+      margin-right: 0;
+    }
   }
 
   &__required {
@@ -72,6 +105,10 @@ contact
       color: $key-color-white;
       margin-left: 12px;
       padding: 2px 8px;
+
+      @include mq(sm) {
+        font-size: 12px;
+      }
     }
   }
 
@@ -99,6 +136,10 @@ contact
       box-shadow: none;
       outline: none;
     }
+
+    @include mq(sm) {
+      width: 100%;
+    }
   }
 
   &__text {
@@ -121,6 +162,10 @@ contact
       border-bottom: 1px solid #4973FF80;
       box-shadow: none;
       outline: none;
+    }
+
+    @include mq(sm) {
+      padding: 0 0 5px;
     }
   }
 
@@ -170,6 +215,14 @@ contact
 
     &:checked+span::after {
       opacity: 1;
+    }
+  }
+
+  &__gender {
+    @include mq(sm) {
+      & + & {
+        margin-left: 40px;
+      }
     }
   }
 
@@ -244,6 +297,14 @@ contact
     }
   }
 
+  &__button {
+
+    @include mq(sm) {
+      width: 165px;
+    margin: 0 auto;
+    }
+  }
+
   &__submit {
     -webkit-appearance: none;
     background-color: #FFAA3B;
@@ -269,6 +330,13 @@ contact
     &::-moz-foucus-inner {
       border: none;
       padding: 0;
+    }
+
+    @include mq(sm) {
+      display: inline-block;
+      width: 165px;
+      height: 50px;
+      margin-top: 35px;
     }
   }
 }

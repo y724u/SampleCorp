@@ -1603,7 +1603,8 @@ contact
 
 @media screen and (max-width: 767px) {
   .contact {
-    display: none;
+    padding: 40px 5%;
+    margin-top: 60px;
   }
 }
 
@@ -1621,8 +1622,21 @@ contact
   padding: 60px 0;
 }
 
+@media screen and (max-width: 767px) {
+  .contact__header {
+    padding: 40px 5%;
+    height: auto;
+  }
+}
+
 .contact__title {
   font-size: 36px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact__title {
+    font-size: 30px;
+  }
 }
 
 .contact__subtitle {
@@ -1630,10 +1644,24 @@ contact
   margin-top: 16px;
 }
 
+@media screen and (max-width: 767px) {
+  .contact__subtitle {
+    font-size: 14px;
+    margin-top: 12px;
+  }
+}
+
 .contact__form {
   background-color: #FFFFFF;
   border-radius: 0 0 12px 12px;
   padding: 60px 120px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact__form {
+    padding: 40px 5%;
+    height: auto;
+  }
 }
 
 .contact__item {
@@ -1644,6 +1672,13 @@ contact
 
 .contact__item + .contact__item {
   margin-top: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact__item {
+    display: block;
+    width: 100%;
+  }
 }
 
 .contact__display {
@@ -1660,6 +1695,17 @@ contact
   white-space: nowrap;
 }
 
+@media screen and (max-width: 767px) {
+  .contact__label {
+    width: 100%;
+    font-size: 16px;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    margin-right: 0;
+  }
+}
+
 .contact__required::after {
   content: "必須";
   background-color: #FF4646;
@@ -1667,6 +1713,12 @@ contact
   color: #FFFFFF;
   margin-left: 12px;
   padding: 2px 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact__required::after {
+    font-size: 12px;
+  }
 }
 
 .contact__select {
@@ -1696,6 +1748,12 @@ contact
   outline: none;
 }
 
+@media screen and (max-width: 767px) {
+  .contact__select {
+    width: 100%;
+  }
+}
+
 .contact__text {
   display: inline-block;
   -moz-appearance: none;
@@ -1718,6 +1776,12 @@ contact
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  .contact__text {
+    padding: 0 0 5px;
+  }
 }
 
 .contact__radio {
@@ -1768,6 +1832,12 @@ contact
 
 .contact__radio:checked + span::after {
   opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .contact__gender + .contact__gender {
+    margin-left: 40px;
+  }
 }
 
 .contact__textarea {
@@ -1843,6 +1913,13 @@ contact
   opacity: 1;
 }
 
+@media screen and (max-width: 767px) {
+  .contact__button {
+    width: 165px;
+    margin: 0 auto;
+  }
+}
+
 .contact__submit {
   -webkit-appearance: none;
   background-color: #FFAA3B;
@@ -1868,6 +1945,15 @@ contact
 .contact__submit::-moz-foucus-inner {
   border: none;
   padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .contact__submit {
+    display: inline-block;
+    width: 165px;
+    height: 50px;
+    margin-top: 35px;
+  }
 }
 
 /*================================================================
