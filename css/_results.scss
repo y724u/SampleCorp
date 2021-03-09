@@ -71,7 +71,7 @@ results
 
   &-container {
     height: 436px;
-
+  
     @include mq(sm) {
       height: 310px;
     }
@@ -106,6 +106,8 @@ results
 
     @include mq(sm) {
       width: 274px;
+      margin: 0 auto;
+
 
       h3 {
         font-size: 14px;

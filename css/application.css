@@ -1174,6 +1174,7 @@ results
 @media screen and (max-width: 767px) {
   .swiper-box {
     width: 274px;
+    margin: 0 auto;
   }
   .swiper-box h3 {
     font-size: 14px;
@@ -2084,7 +2085,7 @@ contact
 }
 
 .contact__submit.box__checked {
-  background-color: #927145;
+  background-color: #FFAA3B;
   -webkit-transition: .5s;
   transition: .5s;
 }

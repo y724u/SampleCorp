@@ -50,35 +50,30 @@ var mySwiper = new Swiper('.swiper-container', {
       slidesPerView: 1.5,
       spaceBetween: 20
     },
-    // 画面幅が 768px 以上の場合（window width >= 768px）
+    // 画面幅が 865px 以上の場合（window width >= 865px）
     865: {
       slidesPerView: 2,
       // spaceBetween: 40
     },
-// 画面幅が 768px 以上の場合（window width >= 768px）
+// 画面幅が 1100px 以上の場合（window width >= 1100px）
     1100: {
       slidesPerView: 2.5,
       spaceBetween: 40
+    },
+    // 画面幅が 1280px 以上の場合（window width >= 1280px）
+    1281: {
+      slidesPerView: 3,
     }
   },
   // スライドの方向
   direction: 'horizontal',
   // スライドの間の余白
-  // spaceBetween: '40',
-  // ループモード
-  // loop: true,
 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
-
-  // Navigation arrows
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev',
-  // },
 
   // And if we need scrollbar
   scrollbar: {
