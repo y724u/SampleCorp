@@ -127,15 +127,14 @@ contact
     width: 178px;
     height: 40px;
     margin-left: 70px;
+    transition: .5s;
 
     &::-ms-expand {
       display: none;
     }
 
-    &:focus {
-      border: 1px solid rgba(0, 0, 0, 0.32);
-      box-shadow: none;
-      outline: none;
+    &:hover {
+      box-shadow: 0px 0px 5px #4973FF80;
     }
 
     @include mq(sm) {
@@ -160,11 +159,16 @@ contact
     width: 100%;
     max-width: 530px;
     margin-left: 73px;
+    transition: .5s;
 
     &:focus {
       border-bottom: 1px solid #4973FF80;
-      box-shadow: none;
-      outline: none;
+      box-shadow: 0px 8px 8px -8px  #4973FF80;
+    }
+
+    &:hover {
+      border-bottom: 1px solid #4973FF80;
+      box-shadow: 0px 8px 8px -8px  #4973FF80;
     }
 
     @include mq(sm) {
@@ -188,7 +192,7 @@ contact
     +span::before {
       -webkit-transform: translateY(-50%);
       background: #fff;
-      border: 1px solid rgba(0, 0, 0, 0.16);
+      border: 1px solid #707070;
       border-radius: 50%;
       content: "";
       display: block;
@@ -198,6 +202,15 @@ contact
       top: 50%;
       transform: translateY(-50%);
       width: 16px;
+      transition: .5s;
+    }
+
+    &:hover {
+
+      +span::before {
+        border: 1px solid #3B69FF;
+        box-shadow: 0px 0px 6px  #4973FF80;
+      }
     }
 
     +span::after {
@@ -244,11 +257,17 @@ contact
     height: 200px;
     padding: 0.4em 0.8em;
     width: 100%;
+    transition: .5s;
 
     :focus {
       border: 1px solid rgba(0, 0, 0, 0.32);
       box-shadow: none;
       outline: none;
+    }
+
+    &:hover {
+      border: 1px solid #4973FF80;
+      box-shadow: 0px 0px 8px #4973FF80;
     }
   }
 
@@ -277,6 +296,14 @@ contact
       top: 50%;
       transform: translateY(-50%);
       width: 20px;
+      transition: .5s;
+    }
+
+    &:hover {
+      +span::before {
+        border: 1px solid #4973FF80;
+      box-shadow: 0px 0px 5px #4973FF80;
+      }
     }
 
     +span::after {
