@@ -37,7 +37,7 @@ contact
     font-size: 36px;
 
     @include mq(sm) {
-     font-size: 30px;
+      font-size: 30px;
     }
   }
 
@@ -64,7 +64,8 @@ contact
 
   &__item {
     display: flex;
-    & + & {
+
+    &+& {
       margin-top: 32px;
     }
 
@@ -163,12 +164,12 @@ contact
 
     &:focus {
       border-bottom: 1px solid #4973FF80;
-      box-shadow: 0px 8px 8px -8px  #4973FF80;
+      box-shadow: 0px 8px 8px -8px #4973FF80;
     }
 
     &:hover {
       border-bottom: 1px solid #4973FF80;
-      box-shadow: 0px 8px 8px -8px  #4973FF80;
+      box-shadow: 0px 8px 8px -8px #4973FF80;
     }
 
     @include mq(sm) {
@@ -209,7 +210,7 @@ contact
 
       +span::before {
         border: 1px solid #3B69FF;
-        box-shadow: 0px 0px 6px  #4973FF80;
+        box-shadow: 0px 0px 6px #4973FF80;
       }
     }
 
@@ -237,7 +238,7 @@ contact
 
   &__gender {
     @include mq(sm) {
-      & + & {
+      &+& {
         margin-left: 40px;
       }
     }
@@ -302,7 +303,7 @@ contact
     &:hover {
       +span::before {
         border: 1px solid #4973FF80;
-      box-shadow: 0px 0px 5px #4973FF80;
+        box-shadow: 0px 0px 5px #4973FF80;
       }
     }
 
@@ -332,7 +333,7 @@ contact
 
     @include mq(sm) {
       width: 165px;
-    margin: 0 auto;
+      margin: 0 auto;
     }
   }
 
@@ -369,6 +370,15 @@ contact
       width: 165px;
       height: 50px;
       margin-top: 35px;
+    }
+
+    &.box__checked {
+      background-color: #927145;
+      transition: .5s;
+
+      &:hover {
+        background-color: #F18900;
+      }
     }
   }
 }

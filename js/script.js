@@ -32,6 +32,13 @@ $(function () {
     $(this).toggleClass("active");
   });
 
+  // <!-- ダウンロードボタン活性化&非活性化 -->
+  $('.js-checkbox').on('change', function () {
+    if ($(this).prop('checked'))
+      $('.js-button').addClass('box__checked');
+    else
+      $('.js-button').removeClass('box__checked');
+  });
 
 // <!-- スワイパースライド -->
 var mySwiper = new Swiper('.swiper-container', {

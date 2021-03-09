@@ -1868,14 +1868,14 @@ contact
 
 .contact__text:focus {
   border-bottom: 1px solid #4973FF80;
-  -webkit-box-shadow: 0px 8px 8px -8px  #4973FF80;
-          box-shadow: 0px 8px 8px -8px  #4973FF80;
+  -webkit-box-shadow: 0px 8px 8px -8px #4973FF80;
+          box-shadow: 0px 8px 8px -8px #4973FF80;
 }
 
 .contact__text:hover {
   border-bottom: 1px solid #4973FF80;
-  -webkit-box-shadow: 0px 8px 8px -8px  #4973FF80;
-          box-shadow: 0px 8px 8px -8px  #4973FF80;
+  -webkit-box-shadow: 0px 8px 8px -8px #4973FF80;
+          box-shadow: 0px 8px 8px -8px #4973FF80;
 }
 
 @media screen and (max-width: 767px) {
@@ -1917,8 +1917,8 @@ contact
 
 .contact__radio:hover + span::before {
   border: 1px solid #3B69FF;
-  -webkit-box-shadow: 0px 0px 6px  #4973FF80;
-          box-shadow: 0px 0px 6px  #4973FF80;
+  -webkit-box-shadow: 0px 0px 6px #4973FF80;
+          box-shadow: 0px 0px 6px #4973FF80;
 }
 
 .contact__radio + span::after {
@@ -2081,6 +2081,16 @@ contact
     height: 50px;
     margin-top: 35px;
   }
+}
+
+.contact__submit.box__checked {
+  background-color: #927145;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.contact__submit.box__checked:hover {
+  background-color: #F18900;
 }
 
 /*================================================================
