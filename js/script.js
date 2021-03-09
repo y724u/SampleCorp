@@ -24,9 +24,16 @@ $(function () {
     );
     return false;
   });
-
 });
 
+// <!-- スライドトグル -->
+  $(".js-toggle").on("click", function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass("active");
+  });
+
+
+// <!-- スワイパースライド -->
 var mySwiper = new Swiper('.swiper-container', {
 
   // レスポンシブブレーポイント（画面幅による設定）

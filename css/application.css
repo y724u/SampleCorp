@@ -1442,7 +1442,7 @@ Q&A
   color: #3E3E3E;
   font-weight: bold;
   letter-spacing: 0.4px;
-  background: url(../images/PC/minus.svg) no-repeat right;
+  background: url(../images/PC/plus.svg) no-repeat right;
 }
 
 .question__definition span {
@@ -1461,9 +1461,14 @@ Q&A
   padding-left: 1px;
 }
 
+.question__definition.active {
+  background: url(../images/PC/minus.svg) no-repeat right;
+}
+
 .question__description {
   background-color: #3B69FF33;
   border-radius: 4px;
+  display: none;
   padding: 16px;
   margin-top: 18px;
 }
