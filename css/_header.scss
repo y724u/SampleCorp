@@ -125,7 +125,29 @@ header
 
   &-open &-hamburger-icon:after,
   &-open &-hamburger-icon:before {
-  background-color: #ffffff;
+    background-color: #ffffff;
+  }
+
+  &-overlay {
+    background-color: #3E3E3E;
+    opacity: .7;
+  }
+
+  &-menu {
+    font-size: 18px;
+    line-height: 22px;
+    width: 150px;
+    height: 350px;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    text-align: center;
+  }
 }
+.drawer--right.drawer-open .drawer-nav {
+  width: 80%;
 }
 
+.drawer--right.drawer-open .drawer-hamburger {
+  right: 80%;
+}
