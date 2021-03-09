@@ -44,9 +44,20 @@ results
 
   &__button {
     @extend %button-box;
+    transition: .3s;
 
     a {
       @extend %button-link;
+
+      &:hover {
+        color: #3E3E3E;
+        border: 1px solid #707070;
+      }
+    }
+
+    &:hover {
+      background-color: #ffffff;
+      border: 1px solid #707070;
     }
 
     @include mq(sm) {

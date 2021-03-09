@@ -1,4 +1,8 @@
 $(function () {
+  // <!-- ハンバーガーメニュー -->
+  $(document).ready(function() {
+    $('.drawer').drawer();
+  });
 
   // <!-- スムーススクロール -->
   // #から始まるURLがクリックされた時
