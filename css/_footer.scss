@@ -30,6 +30,10 @@ footer
     opacity: .6;
     font-size: 2.2em;
     margin-right: 30px;
+    
+    &:hover {
+      cursor: pointer;
+    }
 
     @include mq(sm) {
       margin: 0 25px;

@@ -81,7 +81,7 @@ contact
   &__label {
     display: inline-block;
     font-weight: bold;
-    width: 130px;
+    width: 10%;
     height: 40px;
     margin-right: 60px;
     line-height: 40px;
@@ -126,6 +126,7 @@ contact
     padding: 0.4em 0.8em;
     width: 178px;
     height: 40px;
+    margin-left: 70px;
 
     &::-ms-expand {
       display: none;
@@ -139,6 +140,7 @@ contact
 
     @include mq(sm) {
       width: 100%;
+      margin-left: 0;
     }
   }
 
@@ -157,6 +159,7 @@ contact
     padding: 0.4em 0.8em;
     width: 100%;
     max-width: 530px;
+    margin-left: 73px;
 
     &:focus {
       border-bottom: 1px solid #4973FF80;
@@ -166,6 +169,7 @@ contact
 
     @include mq(sm) {
       padding: 0 0 5px;
+      margin-left: 0;
     }
   }
 
