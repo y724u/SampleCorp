@@ -57,7 +57,7 @@ var mySwiper = new Swiper('.swiper-container', {
     },
 // 画面幅が 1100px 以上の場合（window width >= 1100px）
     1100: {
-      slidesPerView: 2.5,
+      slidesPerView: 2.8,
       spaceBetween: 40
     },
     // 画面幅が 1280px 以上の場合（window width >= 1280px）

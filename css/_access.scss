@@ -10,7 +10,7 @@ access
   position: relative;
   height: 504px;
   width: 100%;
-  margin-bottom: 300px;
+  margin-bottom: 360px;
 
   @include mq(sm) {
     background: #3E3E3E;
@@ -67,7 +67,7 @@ access
   &__iframe {
     position: relative;
     width: 100%;
-    padding-top: 41%;
+    padding-top: 45%;
     height: 0;
     overflow: hidden;
 
@@ -89,9 +89,11 @@ access
     @extend %button-box;
     width: 314px;
     transition: .5s;
+    margin-top: 28px;
 
     a {
       @extend %button-link;
+      letter-spacing: 2px;
       &:hover {
         color: #3E3E3E;
         border: 1px solid #707070;

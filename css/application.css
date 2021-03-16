@@ -5,7 +5,7 @@ application
 /*! destyle.css v1.0.15 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model */
 /* ============================================ */
-@import url("https://fonts.google.com/specimen/Montserrat");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
   -webkit-box-sizing: border-box;
@@ -566,7 +566,7 @@ header
 }
 
 .header__nav {
-  height: 60px;
+  height: 83px;
   background-color: rgba(255, 255, 255, 0.1);
   font-family: "Montserrat", "Manrope", "sans-serif";
 }
@@ -579,7 +579,7 @@ header
 }
 
 .header__list {
-  width: 650px;
+  width: 621px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -593,7 +593,9 @@ header
 }
 
 .header__item {
-  line-height: 60px;
+  line-height: 83px;
+  letter-spacing: -0.4px;
+  font-size: 16px;
 }
 
 .header__item a {
@@ -626,7 +628,7 @@ header
 }
 
 .header__item + .header__item {
-  margin-left: 40px;
+  margin-left: 41px;
 }
 
 .header__name {
@@ -642,8 +644,8 @@ header
 
 .header__box {
   position: absolute;
-  top: 36%;
-  left: 48%;
+  top: 35%;
+  left: 47%;
   margin: 0 40px;
 }
 
@@ -672,7 +674,8 @@ header
   font-size: 18px;
   font-weight: bold;
   line-height: 28px;
-  margin-top: 40px;
+  letter-spacing: .45px;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 767px) {
@@ -683,14 +686,16 @@ header
 }
 
 .header__contact {
-  color: #FFFFFF;
   background-color: #FFAA3B;
-  margin-top: 40px;
   border-radius: 10px;
-  width: 282px;
-  height: 50px;
+  color: #FFFFFF;
+  font-size: 18px;
   -webkit-transition: .3s;
   transition: .3s;
+  letter-spacing: .45px;
+  margin-top: 38px;
+  width: 282px;
+  height: 50px;
 }
 
 .header__contact a {
@@ -781,8 +786,9 @@ header
 news
 ================================================================*/
 .news {
-  margin-top: 120px;
   font-size: 18px;
+  margin-top: 120px;
+  letter-spacing: .45px;
 }
 
 @media screen and (max-width: 767px) {
@@ -795,9 +801,9 @@ news
 
 .news__container {
   background-color: #FFFFFF;
-  padding: 60px 40px 40px;
   -webkit-box-shadow: 0 5px 12px rgba(62, 62, 62, 0.3);
           box-shadow: 0 5px 12px rgba(62, 62, 62, 0.3);
+  padding: 60px 60px 40px;
 }
 
 @media screen and (max-width: 767px) {
@@ -807,11 +813,13 @@ news
 }
 
 .news__title {
+  border-bottom: 1px solid #CECDCD;
   font-family: "Montserrat", "Manrope", "sans-serif";
   font-size: 36px;
+  font-weight: bold;
   text-align: center;
+  line-height: 44px;
   padding-bottom: 60px;
-  border-bottom: 1px solid #CECDCD;
 }
 
 @media screen and (max-width: 767px) {
@@ -823,17 +831,18 @@ news
 }
 
 .news__link {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom: 1px solid #CECDCD;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 90px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
   -webkit-transition: .5s;
   transition: .5s;
+  height: auto;
+  position: relative;
+  padding: 34px 0;
 }
 
 .news__link:hover {
@@ -883,13 +892,14 @@ news
 }
 
 .news__name {
-  margin-left: 40px;
   border: 2px solid #3B69FF;
   border-radius: 50px;
-  width: 121px;
+  font-size: 14px;
   height: 30px;
-  line-height: 30px;
   text-align: center;
+  margin-left: 40px;
+  width: 121px;
+  line-height: 29px;
 }
 
 @media screen and (max-width: 767px) {
@@ -903,6 +913,7 @@ news
 }
 
 .news__text {
+  line-height: 28px;
   margin-left: 40px;
   width: 60%;
 }
@@ -916,12 +927,13 @@ news
 }
 
 .news__button {
+  border: 1px solid #707070;
   font-family: "Montserrat", "Manrope", "sans-serif";
   font-size: 20px;
+  font-weight: bold;
   letter-spacing: 4px;
   width: 236px;
   height: 64px;
-  border: 1px solid #707070;
   margin: 40px auto 0;
   -webkit-transition: .3s;
   transition: .3s;
@@ -958,7 +970,7 @@ service
   background-color: #3E3E3E;
   height: 400px;
   width: 100%;
-  margin-top: 60px;
+  margin-top: 120px;
 }
 
 @media screen and (max-width: 767px) {
@@ -971,6 +983,7 @@ service
 .service__title {
   font-size: 36px;
   font-family: "Montserrat", "Manrope", "sans-serif";
+  font-weight: bold;
   color: #FFFFFF;
   text-align: center;
   padding: 60px 0;
@@ -1024,9 +1037,9 @@ service
 }
 
 .service__img {
-  width: 64px;
-  height: 64px;
-  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  margin: 20px auto 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1038,6 +1051,7 @@ service
   text-align: center;
   letter-spacing: 4px;
   line-height: 28px;
+  padding-top: 3px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1048,7 +1062,7 @@ service
 
 .service__text {
   font-size: 14px;
-  margin-top: 28px;
+  margin-top: 14px;
   line-height: 24px;
 }
 
@@ -1088,7 +1102,8 @@ results
   font-size: 36px;
   color: #FFFFFF;
   font-family: "Montserrat", "Manrope", "sans-serif";
-  padding: 40px 0 40px 60px;
+  font-weight: bold;
+  padding: 60px 0 40px 60px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1100,7 +1115,7 @@ results
 }
 
 .results__slider {
-  padding: 60px 0 0 60px;
+  padding: 23px 0 0 60px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1112,6 +1127,7 @@ results
 .results__button {
   -webkit-transition: .3s;
   transition: .3s;
+  margin-top: 30px;
 }
 
 .results__button a:hover {
@@ -1166,7 +1182,7 @@ results
 }
 
 .swiper-box p {
-  padding: 16px 0;
+  padding: 12px 0 16px;
   line-height: 24px;
   padding-left: 16px;
 }
@@ -1237,7 +1253,7 @@ results
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-  margin-right: 20px;
+  margin-right: 16px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1254,7 +1270,7 @@ price
 }
 
 .price__container {
-  padding: 120px 60px 144px 60px;
+  padding: 120px 7px 122px 7px;
   max-width: 980px;
   margin: 0 auto;
 }
@@ -1281,13 +1297,14 @@ price
 
 .price__table {
   border: 1px solid #707070;
+  font-weight: bold;
   width: 100%;
   margin-top: 60px;
 }
 
 .price__table td {
   border: 1px solid #707070;
-  height: 61px;
+  height: 59px;
   font-size: 24px;
   line-height: 61px;
 }
@@ -1297,9 +1314,9 @@ price
     margin-top: 40px;
   }
   .price__table td {
-    height: 56px;
+    height: 59px;
     font-size: 18px;
-    line-height: 56px;
+    line-height: 54px;
     font-weight: bold;
   }
 }
@@ -1308,10 +1325,11 @@ price
   background-color: #3E3E3E;
   color: #FFFFFF;
   text-align: center;
-  width: 30%;
+  width: 27%;
 }
 
 .price__amount {
+  background-color: #FFFFFF;
   padding-left: 40px;
 }
 
@@ -1339,9 +1357,9 @@ price
 .price__bg {
   background-color: #3E3E3E;
   height: 100%;
-  width: 70%;
+  width: 76%;
   position: absolute;
-  top: 148px;
+  top: 144px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1370,7 +1388,8 @@ price
 
 .price__left {
   background-color: #FFFFFF;
-  padding: 120px 60px 132px 60px;
+  padding: 120px 60px 120px 60px;
+  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
@@ -1422,7 +1441,7 @@ price
 }
 
 .price__right {
-  margin-top: 80px;
+  margin-top: 78px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1436,7 +1455,7 @@ Q&A
 ================================================================*/
 .question {
   background: url(../images/PC/qa-bg.png) center center/cover;
-  top: 110px;
+  top: 117px;
   position: relative;
   width: 100%;
   height: auto;
@@ -1449,7 +1468,7 @@ Q&A
 }
 
 .question__container {
-  padding: 60px 40px 120px 0;
+  padding: 60px 40px 120px 40px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1476,7 +1495,7 @@ Q&A
 .question__wrapper {
   margin-top: 60px;
   margin-left: auto;
-  width: 50%;
+  width: 51%;
 }
 
 @media screen and (max-width: 767px) {
@@ -1559,7 +1578,7 @@ access
   position: relative;
   height: 504px;
   width: 100%;
-  margin-bottom: 300px;
+  margin-bottom: 360px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1631,7 +1650,7 @@ access
 .access__iframe {
   position: relative;
   width: 100%;
-  padding-top: 41%;
+  padding-top: 45%;
   height: 0;
   overflow: hidden;
 }
@@ -1655,6 +1674,11 @@ access
   width: 314px;
   -webkit-transition: .5s;
   transition: .5s;
+  margin-top: 28px;
+}
+
+.access__button a {
+  letter-spacing: 2px;
 }
 
 .access__button a:hover {
@@ -1689,7 +1713,7 @@ contact
   background: url(../images/PC/contact-bg.png) center center/cover;
   width: 100%;
   height: auto;
-  padding: 60px 160px;
+  padding: 62px 160px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1759,6 +1783,7 @@ contact
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 35px;
 }
 
 .contact__item + .contact__item {
@@ -1772,6 +1797,10 @@ contact
   }
 }
 
+.contact__gender {
+  margin-top: 20px;
+}
+
 .contact__display {
   display: block;
 }
@@ -1781,7 +1810,7 @@ contact
   font-weight: bold;
   width: 10%;
   height: 40px;
-  margin-right: 60px;
+  margin-right: 110px;
   line-height: 40px;
   white-space: nowrap;
 }
@@ -1803,7 +1832,8 @@ contact
   border-radius: 2px;
   color: #FFFFFF;
   margin-left: 12px;
-  padding: 2px 8px;
+  padding: 1px 8px;
+  font-size: 12px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1826,7 +1856,6 @@ contact
   padding: 0.4em 0.8em;
   width: 178px;
   height: 40px;
-  margin-left: 70px;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -1859,10 +1888,9 @@ contact
   color: inherit;
   font-family: inherit;
   font-size: 1em;
-  padding: 0.4em 0.8em;
+  padding: 0em 0.8em;
   width: 100%;
   max-width: 530px;
-  margin-left: 73px;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -1906,12 +1934,12 @@ contact
   border-radius: 50%;
   content: "";
   display: block;
-  height: 16px;
+  height: 12px;
   left: 0;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 16px;
+  width: 12px;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -1928,8 +1956,8 @@ contact
   border: 1px solid transparent;
   border-radius: 50%;
   content: "";
-  height: 8px;
-  left: 4px;
+  height: 4px;
+  left: 3px;
   opacity: 0;
   padding: 2px;
   position: absolute;
@@ -1937,11 +1965,15 @@ contact
   transform: translateY(-50%);
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  width: 8px;
+  width: 4px;
 }
 
 .contact__radio:checked + span::after {
   opacity: 1;
+}
+
+.contact__gender + .contact__gender {
+  margin-left: 40px;
 }
 
 @media screen and (max-width: 767px) {

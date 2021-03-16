@@ -25,7 +25,8 @@ results
     font-size: 36px;
     color: $key-color-white;
     font-family: $font-family-en;
-    padding: 40px 0 40px 60px;
+    font-weight: bold;
+    padding: 60px 0 40px 60px;
 
     @include mq(sm) {
       font-size: 30px;
@@ -35,7 +36,7 @@ results
   }
 
   &__slider {
-    padding: 60px 0 0 60px;
+    padding: 23px 0 0 60px;
 
     @include mq(sm) {
       padding: 0 5% 40px;
@@ -45,6 +46,7 @@ results
   &__button {
     @extend %button-box;
     transition: .3s;
+    margin-top: 30px;
 
     a {
       @extend %button-link;
@@ -99,7 +101,7 @@ results
     }
 
     p {
-      padding: 16px 0;
+      padding: 12px 0 16px;
       line-height: 24px;
       padding-left: 16px;
     }
@@ -169,7 +171,7 @@ results
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin-right: 20px;
+  margin-right: 16px;
 
   @include mq(sm) {
     margin-right: 16px;

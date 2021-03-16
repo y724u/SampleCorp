@@ -5,7 +5,7 @@ Q&A
 ================================================================*/
 .question {
   background: url(../images/PC/qa-bg.png)center center / cover;
-  top: 110px;
+  top: 117px;
   position: relative;
   width: 100%;
   height: auto;
@@ -15,7 +15,7 @@ Q&A
   }
 
   &__container {
-    padding: 60px 40px 120px 0;
+    padding: 60px 40px 120px 40px;
 
     @include mq(sm) {
       padding: 40px 5% 60px;
@@ -38,7 +38,7 @@ Q&A
   &__wrapper {
     margin-top: 60px;
     margin-left: auto;
-    width: 50%;
+    width: 51%;
 
     @include mq(sm) {
       margin-top: 40px;
@@ -53,7 +53,7 @@ Q&A
     line-height: 24px;
     padding: 16px 18px 18px;
 
-    &+& {
+    & + & {
       margin-top: 32px;
     }
 
