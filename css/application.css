@@ -1713,7 +1713,7 @@ contact
   background: url(../images/PC/contact-bg.png) center center/cover;
   width: 100%;
   height: auto;
-  padding: 62px 160px;
+  padding: 60px 160px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1783,7 +1783,6 @@ contact
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 35px;
 }
 
 .contact__item + .contact__item {
@@ -1795,10 +1794,6 @@ contact
     display: block;
     width: 100%;
   }
-}
-
-.contact__gender {
-  margin-top: 20px;
 }
 
 .contact__display {
@@ -1888,7 +1883,7 @@ contact
   color: inherit;
   font-family: inherit;
   font-size: 1em;
-  padding: 0em 0.8em;
+  padding: 0.4em 0.8em;
   width: 100%;
   max-width: 530px;
   -webkit-transition: .5s;
@@ -1972,14 +1967,12 @@ contact
   opacity: 1;
 }
 
-.contact__gender + .contact__gender {
-  margin-left: 40px;
+.contact__gender {
+  margin-top: 20px;
 }
 
-@media screen and (max-width: 767px) {
-  .contact__gender + .contact__gender {
-    margin-left: 40px;
-  }
+.contact__gender + .contact__gender {
+  margin-left: 40px;
 }
 
 .contact__textarea {
