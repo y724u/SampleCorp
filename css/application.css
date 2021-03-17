@@ -1769,7 +1769,7 @@ contact
 .contact__form {
   background-color: #FFFFFF;
   border-radius: 0 0 12px 12px;
-  padding: 60px 120px;
+  padding: 60px 120px 40px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1796,17 +1796,23 @@ contact
   }
 }
 
+.contact__porlicy {
+  margin-top: 39px;
+  font-size: 18px;
+}
+
 .contact__display {
   display: block;
+  margin-top: 13px;
 }
 
 .contact__label {
   display: inline-block;
   font-weight: bold;
   width: 10%;
-  height: 40px;
+  height: 33px;
   margin-right: 110px;
-  line-height: 40px;
+  line-height: 35px;
   white-space: nowrap;
 }
 
@@ -1916,7 +1922,7 @@ contact
 .contact__radio + span {
   cursor: pointer;
   display: inline-block;
-  margin: 0 0.2em 0;
+  margin: 0 0.4em 0;
   padding: 0 0 0 1.2em;
   position: relative;
   line-height: 40px;
@@ -1972,7 +1978,7 @@ contact
 }
 
 .contact__gender + .contact__gender {
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .contact__textarea {
@@ -2014,8 +2020,7 @@ contact
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
-  margin: 0 0.2em 0;
-  padding: 0 0 0 35px;
+  padding: 0 0 0 38px;
   position: relative;
 }
 
@@ -2082,7 +2087,7 @@ contact
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-size: 1em;
+  font-size: 18px;
   margin: 40px 0 1em;
   padding: 0.6em 2em;
   text-decoration: none;
