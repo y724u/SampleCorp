@@ -606,7 +606,7 @@ header
 
 .header__item a::after {
   position: absolute;
-  bottom: 18px;
+  bottom: 30px;
   left: 0;
   content: '';
   width: 100%;
