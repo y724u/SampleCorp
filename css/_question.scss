@@ -5,26 +5,46 @@ Q&A
 ================================================================*/
 .question {
   background: url(../images/PC/qa-bg.png)center center / cover;
-  top: 110px;
+  top: 117px;
   position: relative;
   width: 100%;
   height: auto;
 
+  @include mq(sm) {
+    top: 60px;
+  }
+
   &__container {
-    padding: 60px 40px 120px 0;
+    padding: 60px 40px 120px 40px;
+
+    @include mq(sm) {
+      padding: 40px 5% 60px;
+    }
   }
 
   &__title {
     color: $key-color-black;
     font-size: 36px;
+    font-weight: bold;
     line-height: 44px;
     text-align: center;
+
+    @include mq(sm) {
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 37px;
+    }
   }
 
   &__wrapper {
     margin-top: 60px;
     margin-left: auto;
-    width: 50%;
+    width: 51%;
+
+    @include mq(sm) {
+      margin-top: 40px;
+      width: 100%;
+    }
   }
 
   &__box {
@@ -34,8 +54,16 @@ Q&A
     line-height: 24px;
     padding: 16px 18px 18px;
 
-    & + & {
+    &+& {
       margin-top: 32px;
+    }
+
+    @include mq(sm) {
+      padding: 18px 5% 16px;
+
+      &+& {
+        margin-top: 20px;
+      }
     }
   }
 
@@ -43,11 +71,10 @@ Q&A
     color: #3E3E3E;
     font-weight: bold;
     letter-spacing: 0.4px;
-    background: url(../images/PC/minus.svg) no-repeat right;
-
+    background: url(../images/PC/plus.svg) no-repeat right;
 
     span {
-      background:#3B69FF;
+      background: #3B69FF;
       border-radius: 50%;
       color: #FFFFFF;
       display: inline-block;
@@ -61,13 +88,21 @@ Q&A
       margin-right: 16px;
       padding-left: 1px;
     }
+
+    &.active {
+      background: url(../images/PC/minus.svg) no-repeat right;
+    }
   }
 
   &__description {
-    background-color:#3B69FF33;
+    background-color: #3B69FF33;
     border-radius: 4px;
+    display: none;
     padding: 16px;
     margin-top: 18px;
 
+    @include mq(sm) {
+      padding: 12px 5%;
+    }
   }
 }

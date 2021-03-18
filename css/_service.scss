@@ -8,39 +8,68 @@ service
     background-color: $key-color-black;
     height: 400px;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 120px;
+
+    @include mq(sm) {
+      height: 480px;
+      padding: 0 5%;
+      margin-top: 60px;
+    }
   }
 
   &__title {
     font-size: 36px;
     font-family: $font-family-en;
+    font-weight: bold;
     color: $key-color-white;
     text-align: center;
     padding: 60px 0;
+
+    @include mq(sm) {
+      font-size: 30px;
+      padding: 40px 0;
+    }
   }
 
   &__box {
     background-color: $key-color-white;
+    box-shadow: 0 5px 12px rgba($color: #3E3E3E, $alpha: .3);
     max-width: 960px;
     height: 331px;
     margin: 0 auto;
+
+    @include mq(sm) {
+      height: auto;
+    }
   }
 
   &__list {
     display: flex;
     padding: 60px 45px;
+
+    @include mq(sm) {
+      display: block;
+      padding: 40px 5%;
+    }
   }
 
   &__item {
     &+& {
       margin-left: 90px;
     }
+
+    @include mq(sm) {
+      &+& {
+        margin-left: 0px;
+        margin-top: 58px;
+      }
+    }
   }
 
   &__img {
-    width: 64px;
-    height: 64px;
-    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    margin: 13px auto 0;
     justify-content: center;
   }
 
@@ -50,11 +79,20 @@ service
     text-align: center;
     letter-spacing: 4px;
     line-height: 28px;
+    padding-top: 3px;
+
+    @include mq(sm) {
+      line-height: 24px;
+    }
   }
 
   &__text {
     font-size: 14px;
-    margin-top: 28px;
+    margin-top: 14px;
     line-height: 24px;
+
+    @include mq(sm) {
+      margin-top: 15px;
+    }
   }
 }

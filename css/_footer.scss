@@ -9,48 +9,88 @@ footer
   padding: 60px 160px;
   position: relative;
 
+  @include mq(sm) {
+    padding: 60px 0 57px 0;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
     max-width: 960px;
     margin: 0 auto;
+
+    @include mq(sm) {
+      display: block;
+      width: 250px;
+      text-align: center;
+    }
   }
 
   &__icon {
     opacity: .6;
-    font-size: 2.2em;
-    margin-right: 30px;
+    font-size: 2.6em;
+    margin-right: 25px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @include mq(sm) {
+      margin: 0 25px;
+    }
   }
 
   &__text {
     opacity: .6;
     margin-top: 40px;
+
+    @include mq(sm) {
+      font-size: 14px;
+      margin-top: 38px;
+    }
   }
 
   &__list {
-    & + & {
+    &+& {
       margin-top: 24px;
     }
   }
 
   &__right {
     text-align: right;
+
+    @include mq(sm) {
+      text-align: center;
+      margin-top: 40px;
+    }
   }
 
   &__detail {
     color: #E3E3E3;
+    font-family: Montserrat;
     font-size: 40px;
     font-weight: bold;
+
+    @include mq(sm) {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
   }
 
   &__copyright {
     opacity: .6;
-    padding-top: 10px;
+    display: block;
+    margin-top: 18px;
   }
 
   &__arrow {
     position: absolute;
-    bottom: 30px;
-    right: 30px;
+    bottom: 50px;
+    right: 40px;
+
+    @include mq(sm) {
+      bottom: 20px;
+      right: 20px;
+    }
   }
 }
