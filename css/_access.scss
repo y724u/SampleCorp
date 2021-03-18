@@ -46,6 +46,7 @@ access
 
   &__title {
     font-size: 36px;
+    font-weight: bold;
 
     @include mq(sm) {
       font-size: 30px;

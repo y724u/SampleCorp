@@ -572,6 +572,7 @@ header
 
 @media screen and (max-width: 767px) {
   .header__nav {
+    background-color: #FFFFFF;
     padding: 20px 5%;
     height: 68px;
   }
@@ -651,7 +652,7 @@ header
 @media screen and (max-width: 767px) {
   .header__box {
     position: static;
-    padding: 161px 0 230px;
+    padding: 155px 0 230px;
     margin: 0 5%;
   }
 }
@@ -681,6 +682,7 @@ header
   .header__text {
     font-size: 14px;
     line-height: 20px;
+    margin-top: 22px;
   }
 }
 
@@ -710,18 +712,39 @@ header
 
 @media screen and (max-width: 767px) {
   .header__contact {
+    font-size: 16px;
     width: 222px;
-    margin: 30px auto 0;
+    margin: 25px auto 0;
   }
 }
 
+.drawer-hamburger {
+  top: 5px;
+}
+
 .drawer-hamburger-icon, .drawer-hamburger-icon:after, .drawer-hamburger-icon:before {
-  height: 3px;
+  border-radius: 5px;
+  height: 4px;
+  width: 26px;
 }
 
 .drawer-open .drawer-hamburger-icon:after,
 .drawer-open .drawer-hamburger-icon:before {
   background-color: #ffffff;
+}
+
+.drawer-hamburger-icon:before {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  content: " ";
+}
+
+.drawer-hamburger-icon:after {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  content: " ";
 }
 
 .drawer-overlay {
@@ -1283,6 +1306,7 @@ price
 .price__title {
   color: #3E3E3E;
   font-size: 36px;
+  font-weight: bold;
   line-height: 44px;
   text-align: center;
 }
@@ -1399,6 +1423,7 @@ price
 
 .price__comments {
   font-size: 36px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 767px) {
@@ -1479,6 +1504,7 @@ Q&A
 .question__title {
   color: #3E3E3E;
   font-size: 36px;
+  font-weight: bold;
   line-height: 44px;
   text-align: center;
 }
@@ -1624,6 +1650,7 @@ access
 
 .access__title {
   font-size: 36px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 767px) {
@@ -1746,6 +1773,7 @@ contact
 
 .contact__title {
   font-size: 36px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 767px) {

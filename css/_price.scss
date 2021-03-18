@@ -19,6 +19,7 @@ price
   &__title {
     color: $key-color-black;
     font-size: 36px;
+    font-weight: bold;
     line-height: 44px;
     text-align: center;
 
@@ -121,6 +122,7 @@ price
 
   &__comments {
     font-size: 36px;
+    font-weight: bold;
 
     @include mq(sm) {
       font-size: 30px;
