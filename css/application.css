@@ -753,20 +753,21 @@ header
 }
 
 .drawer-menu {
-  font-size: 18px;
-  line-height: 22px;
+  line-height: 0;
   width: 50%;
   height: 50%;
   position: absolute;
   left: 25%;
-  top: 25%;
+  top: 15%;
   text-align: center;
 }
 
 .drawer-menu-item {
-  position: relative;
   display: inline-block;
+  font-size: 18px;
+  position: relative;
   text-decoration: none;
+  margin-top: 33px;
 }
 
 .drawer-menu-item::after {
@@ -816,7 +817,7 @@ news
 @media screen and (max-width: 767px) {
   .news {
     position: relative;
-    margin-top: -60px;
+    margin-top: -40px;
     padding: 0 5%;
   }
 }
@@ -942,9 +943,10 @@ news
 
 @media screen and (max-width: 767px) {
   .news__text {
+    font-size: 14px;
+    line-height: 20px;
     width: 90%;
     margin: 10px 0 0;
-    font-size: 14px;
   }
 }
 
@@ -999,6 +1001,7 @@ service
   .service__container {
     height: 480px;
     padding: 0 5%;
+    margin-top: 60px;
   }
 }
 
@@ -1054,14 +1057,14 @@ service
 @media screen and (max-width: 767px) {
   .service__item + .service__item {
     margin-left: 0px;
-    margin-top: 50px;
+    margin-top: 58px;
   }
 }
 
 .service__img {
   width: 50px;
   height: 50px;
-  margin: 20px auto 0;
+  margin: 13px auto 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1090,7 +1093,7 @@ service
 
 @media screen and (max-width: 767px) {
   .service__text {
-    margin-top: 20px;
+    margin-top: 15px;
   }
 }
 
@@ -1103,7 +1106,7 @@ results
 
 @media screen and (max-width: 767px) {
   .results {
-    margin-top: 410px;
+    margin-top: 390px;
   }
 }
 
@@ -1142,7 +1145,7 @@ results
 
 @media screen and (max-width: 767px) {
   .results__slider {
-    padding: 0 5% 40px;
+    padding: 0 5% 30px;
   }
 }
 
@@ -1164,8 +1167,12 @@ results
 
 @media screen and (max-width: 767px) {
   .results__button {
+    height: 54px;
     width: 100%;
-    margin: 24px auto;
+    margin: 15px auto;
+  }
+  .results__button a {
+    line-height: 54px;
   }
 }
 
@@ -1299,7 +1306,7 @@ price
 
 @media screen and (max-width: 767px) {
   .price__container {
-    padding: 40px 5% 80px;
+    padding: 40px 5% 60px;
   }
 }
 
@@ -1337,9 +1344,9 @@ price
     margin-top: 40px;
   }
   .price__table td {
-    height: 59px;
-    font-size: 18px;
-    line-height: 54px;
+    height: 55px;
+    font-size: 20px;
+    line-height: 55px;
     font-weight: bold;
   }
 }
@@ -1349,6 +1356,12 @@ price
   color: #FFFFFF;
   text-align: center;
   width: 27%;
+}
+
+@media screen and (max-width: 767px) {
+  .price__row {
+    width: 28%;
+  }
 }
 
 .price__amount {
@@ -1453,7 +1466,7 @@ price
 @media screen and (max-width: 767px) {
   .price__comment {
     font-size: 14px;
-    margin-top: 40px;
+    margin-top: 36px;
   }
   .price__comment img {
     width: 60px;
@@ -1461,6 +1474,7 @@ price
   }
   .price__comment p {
     line-height: 20px;
+    margin-left: 24px;
   }
 }
 
@@ -1693,6 +1707,7 @@ access
 @media screen and (max-width: 767px) {
   .access__iframe {
     position: absolute;
+    padding-top: 73%;
     top: 150px;
   }
 }
@@ -1720,8 +1735,13 @@ access
 
 @media screen and (max-width: 767px) {
   .access__button {
-    margin-top: 50%;
+    margin-top: 85%;
     width: 100%;
+    height: 54px;
+  }
+  .access__button a {
+    line-height: 54px;
+    font-size: 18px;
   }
 }
 
@@ -1766,6 +1786,7 @@ contact
 
 @media screen and (max-width: 767px) {
   .contact__header {
+    background: url(../images/PC/contact1.png) center center/cover;
     padding: 40px 5%;
     height: auto;
   }
@@ -1791,6 +1812,7 @@ contact
   .contact__subtitle {
     font-size: 14px;
     margin-top: 12px;
+    text-align: left;
   }
 }
 
@@ -1802,7 +1824,7 @@ contact
 
 @media screen and (max-width: 767px) {
   .contact__form {
-    padding: 40px 5%;
+    padding: 40px 3% 20px;
     height: auto;
   }
 }
@@ -1822,6 +1844,9 @@ contact
     display: block;
     width: 100%;
   }
+  .contact__item + .contact__item {
+    margin-top: 28px;
+  }
 }
 
 .contact__porlicy {
@@ -1829,9 +1854,22 @@ contact
   font-size: 18px;
 }
 
+@media screen and (max-width: 767px) {
+  .contact__porlicy {
+    margin-top: 34px;
+    font-size: 16px;
+  }
+}
+
 .contact__display {
   display: block;
   margin-top: 13px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact__display {
+    margin-top: 24px;
+  }
 }
 
 .contact__label {
@@ -1850,7 +1888,7 @@ contact
     font-size: 16px;
     height: 24px;
     line-height: 24px;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
     margin-right: 0;
   }
 }
@@ -1868,6 +1906,7 @@ contact
 @media screen and (max-width: 767px) {
   .contact__required::after {
     font-size: 12px;
+    margin-left: 20px;
   }
 }
 
@@ -1938,7 +1977,8 @@ contact
 
 @media screen and (max-width: 767px) {
   .contact__text {
-    padding: 0 0 5px;
+    font-size: 14px;
+    padding: 0 0 4px;
     margin-left: 0;
   }
 }
@@ -2001,12 +2041,28 @@ contact
   opacity: 1;
 }
 
+@media screen and (max-width: 767px) {
+  .contact__radio + span {
+    margin: 0 0 0 0;
+    line-height: 24px;
+  }
+}
+
 .contact__gender {
   margin-top: 20px;
 }
 
 .contact__gender + .contact__gender {
   margin-left: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact__gender {
+    margin-top: 25px;
+  }
+  .contact__gender + .contact__gender {
+    margin-left: 34px;
+  }
 }
 
 .contact__textarea {
@@ -2038,6 +2094,12 @@ contact
   border: 1px solid #4973FF80;
   -webkit-box-shadow: 0px 0px 8px #4973FF80;
           box-shadow: 0px 0px 8px #4973FF80;
+}
+
+@media screen and (max-width: 767px) {
+  .contact__textarea {
+    height: 160px;
+  }
 }
 
 .contact__checkbox {
@@ -2208,6 +2270,13 @@ footer
   margin-top: 40px;
 }
 
+@media screen and (max-width: 767px) {
+  .footer__text {
+    font-size: 14px;
+    margin-top: 38px;
+  }
+}
+
 .footer__list + .footer__list {
   margin-top: 24px;
 }
@@ -2247,5 +2316,12 @@ footer
   position: absolute;
   bottom: 50px;
   right: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__arrow {
+    bottom: 20px;
+    right: 20px;
+  }
 }
 /*# sourceMappingURL=application.css.map */

@@ -43,10 +43,15 @@ footer
   &__text {
     opacity: .6;
     margin-top: 40px;
+
+    @include mq(sm) {
+      font-size: 14px;
+      margin-top: 38px;
+    }
   }
 
   &__list {
-    & + & {
+    &+& {
       margin-top: 24px;
     }
   }
@@ -82,5 +87,10 @@ footer
     position: absolute;
     bottom: 50px;
     right: 40px;
+
+    @include mq(sm) {
+      bottom: 20px;
+      right: 20px;
+    }
   }
 }

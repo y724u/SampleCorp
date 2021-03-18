@@ -28,6 +28,7 @@ contact
     padding: 60px 0;
 
     @include mq(sm) {
+      background: url(../images/PC/contact1.png)center center / cover;
       padding: 40px 5%;
       height: auto;
     }
@@ -49,6 +50,7 @@ contact
     @include mq(sm) {
       font-size: 14px;
       margin-top: 12px;
+      text-align: left;
     }
   }
 
@@ -58,7 +60,7 @@ contact
     padding: 60px 120px 40px;
 
     @include mq(sm) {
-      padding: 40px 5%;
+      padding: 40px 3% 20px;
       height: auto;
     }
   }
@@ -66,24 +68,37 @@ contact
   &__item {
     display: flex;
 
-    & + &  {
+    &+& {
       margin-top: 32px;
     }
 
     @include mq(sm) {
       display: block;
       width: 100%;
+
+      &+& {
+        margin-top: 28px;
+      }
     }
   }
 
   &__porlicy {
     margin-top: 39px;
     font-size: 18px;
+
+    @include mq(sm) {
+      margin-top: 34px;
+      font-size: 16px;
+    }
   }
 
   &__display {
     display: block;
     margin-top: 13px;
+
+    @include mq(sm) {
+      margin-top: 24px;
+    }
   }
 
   &__label {
@@ -100,7 +115,7 @@ contact
       font-size: 16px;
       height: 24px;
       line-height: 24px;
-      margin-bottom: 16px;
+      margin-bottom: 10px;
       margin-right: 0;
     }
   }
@@ -118,6 +133,7 @@ contact
 
       @include mq(sm) {
         font-size: 12px;
+        margin-left: 20px;
       }
     }
   }
@@ -180,7 +196,8 @@ contact
     }
 
     @include mq(sm) {
-      padding: 0 0 5px;
+      font-size: 14px;
+      padding: 0 0 4px;
       margin-left: 0;
     }
   }
@@ -241,13 +258,29 @@ contact
     &:checked+span::after {
       opacity: 1;
     }
+
+    @include mq(sm) {
+
+      +span {
+        margin: 0 0 0 0;
+        line-height: 24px;
+      }
+    }
   }
 
   &__gender {
     margin-top: 20px;
 
-    & + & {
+    &+& {
       margin-left: 20px;
+    }
+
+    @include mq(sm) {
+      margin-top: 25px;
+
+      &+& {
+        margin-left: 34px;
+      }
     }
   }
 
@@ -276,6 +309,10 @@ contact
     &:hover {
       border: 1px solid #4973FF80;
       box-shadow: 0px 0px 8px #4973FF80;
+    }
+
+    @include mq(sm) {
+      height: 160px;
     }
   }
 

@@ -7,7 +7,7 @@ results
   margin-top: 215px;
 
   @include mq(sm) {
-    margin-top: 410px;
+    margin-top: 390px;
   }
 
   &__container {
@@ -39,7 +39,7 @@ results
     padding: 23px 0 0 60px;
 
     @include mq(sm) {
-      padding: 0 5% 40px;
+      padding: 0 5% 30px;
     }
   }
 
@@ -63,8 +63,13 @@ results
     }
 
     @include mq(sm) {
+      height: 54px;
       width: 100%;
-      margin: 24px auto;
+      margin: 15px auto;
+
+      a {
+        line-height: 54px;
+      }
     }
   }
 }
@@ -73,7 +78,7 @@ results
 
   &-container {
     height: 436px;
-  
+
     @include mq(sm) {
       height: 310px;
     }

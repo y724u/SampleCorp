@@ -11,7 +11,7 @@ news
 
   @include mq(sm) {
     position: relative;
-    margin-top: -60px;
+    margin-top: -40px;
     padding: 0 5%;
   }
 
@@ -115,9 +115,10 @@ news
     width: 60%;
 
     @include mq(sm) {
+      font-size: 14px;
+      line-height: 20px;
       width: 90%;
       margin: 10px 0 0;
-      font-size: 14px;
     }
   }
 

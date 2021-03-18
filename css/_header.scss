@@ -64,7 +64,7 @@ header
       transform: scale(1, 1);
     }
 
-    & + & {
+    &+& {
       margin-left: 41px;
     }
   }
@@ -169,14 +169,14 @@ header
     top: -8px;
     left: 0;
     content: " ";
-}
+  }
 
-&-hamburger-icon:after {
-  position: absolute;
-  top: 8px;
-  left: 0;
-  content: " ";
-}
+  &-hamburger-icon:after {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    content: " ";
+  }
 
   &-overlay {
     background-color: #3E3E3E;
@@ -184,19 +184,20 @@ header
   }
 
   &-menu {
-    font-size: 18px;
-    line-height: 22px;
+    line-height: 0;
     width: 50%;
     height: 50%;
     position: absolute;
     left: 25%;
-    top: 25%;
+    top: 15%;
     text-align: center;
 
     &-item {
-      position: relative;
       display: inline-block;
+      font-size: 18px;
+      position: relative;
       text-decoration: none;
+      margin-top: 33px;
 
       &::after {
         position: absolute;

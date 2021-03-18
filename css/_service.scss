@@ -13,6 +13,7 @@ service
     @include mq(sm) {
       height: 480px;
       padding: 0 5%;
+      margin-top: 60px;
     }
   }
 
@@ -53,14 +54,14 @@ service
   }
 
   &__item {
-    & + & {
+    &+& {
       margin-left: 90px;
     }
 
     @include mq(sm) {
-      & + & {
+      &+& {
         margin-left: 0px;
-        margin-top: 50px;
+        margin-top: 58px;
       }
     }
   }
@@ -68,7 +69,7 @@ service
   &__img {
     width: 50px;
     height: 50px;
-    margin: 20px auto 0;
+    margin: 13px auto 0;
     justify-content: center;
   }
 
@@ -91,7 +92,7 @@ service
     line-height: 24px;
 
     @include mq(sm) {
-      margin-top: 20px;
+      margin-top: 15px;
     }
   }
 }

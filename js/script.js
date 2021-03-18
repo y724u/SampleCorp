@@ -1,6 +1,6 @@
 $(function () {
   // <!-- ハンバーガーメニュー -->
-  $(document).ready(function() {
+  $(document).ready(function () {
     $('.drawer').drawer();
   });
 
@@ -27,24 +27,29 @@ $(function () {
 });
 
 // <!-- スライドトグル -->
-  $(".js-toggle").on("click", function () {
-    $(this).next().slideToggle();
-    $(this).toggleClass("active");
-  });
+$(".js-toggle").on("click", function () {
+  $(this).next().slideToggle();
+  $(this).toggleClass("active");
+});
 
-  // <!-- ダウンロードボタン活性化&非活性化 -->
-  $('.js-checkbox').on('change', function () {
-    if ($(this).prop('checked'))
-      $('.js-button').addClass('box__checked');
-    else
-      $('.js-button').removeClass('box__checked');
-  });
+// <!-- ダウンロードボタン活性化&非活性化 -->
+$('.js-checkbox').on('change', function () {
+  if ($(this).prop('checked'))
+    $('.js-button').addClass('box__checked');
+  else
+    $('.js-button').removeClass('box__checked');
+});
 
 // <!-- スワイパースライド -->
 var mySwiper = new Swiper('.swiper-container', {
 
   // レスポンシブブレーポイント（画面幅による設定）
   breakpoints: {
+    // 画面幅が 0px 以上の場合（window width >= 0px）
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
     // 画面幅が 767px 以上の場合（window width >= 767px）
     767: {
       slidesPerView: 1.5,
@@ -55,7 +60,7 @@ var mySwiper = new Swiper('.swiper-container', {
       slidesPerView: 2,
       // spaceBetween: 40
     },
-// 画面幅が 1100px 以上の場合（window width >= 1100px）
+    // 画面幅が 1100px 以上の場合（window width >= 1100px）
     1100: {
       slidesPerView: 2.8,
       spaceBetween: 40
